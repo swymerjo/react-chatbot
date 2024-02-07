@@ -1,0 +1,283 @@
+{
+  "results": [
+    {
+      "date": "4 FEBRUARY",
+      "competition": "PREMIER LEAGUE",
+      "venue": "EMIRATES STADIUM",
+      "home_team": "Arsenal",
+      "home_score": 3,
+      "away_team": "Liverpool",
+      "away_score": 1
+    },
+    {
+      "date": "31 JANUARY",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 4,
+      "away_team": "Chelsea",
+      "away_score": 1
+    },
+    {
+      "date": "28 JANUARY",
+      "competition": "EMIRATES FA CUP",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 5,
+      "away_team": "Norwich",
+      "away_score": 2
+    },
+    {
+      "date": "24 JANUARY",
+      "competition": "CARABAO CUP",
+      "venue": "CRAVEN COTTAGE",
+      "home_team": "Fulham",
+      "home_score": 1,
+      "away_team": "Liverpool",
+      "away_score": 1
+    },
+    {
+      "date": "21 JANUARY",
+      "competition": "PREMIER LEAGUE",
+      "venue": "VITALITY STADIUM",
+      "home_team": "Bournemouth",
+      "home_score": 0,
+      "away_team": "Liverpool",
+      "away_score": 4
+    },
+    {
+      "date": "10 JANUARY",
+      "competition": "CARABAO CUP",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 2,
+      "away_team": "Fulham",
+      "away_score": 1
+    },
+    {
+      "date": "7 JANUARY",
+      "competition": "EMIRATES FA CUP",
+      "venue": "EMIRATES STADIUM",
+      "home_team": "Arsenal",
+      "home_score": 0,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "1 JANUARY",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 4,
+      "away_team": "Newcastle",
+      "away_score": 2
+    },
+    {
+      "date": "26 DECEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "TURF MOOR",
+      "home_team": "Burnley",
+      "home_score": 0,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "23 DECEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 1,
+      "away_team": "Arsenal",
+      "away_score": 1
+    },
+    {
+      "date": "20 DECEMBER",
+      "competition": "CARABAO CUP",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 5,
+      "away_team": "West Ham",
+      "away_score": 1
+    },
+    {
+      "date": "17 DECEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 0,
+      "away_team": "Man Utd",
+      "away_score": 0
+    },
+    {
+      "date": "14 DECEMBER",
+      "competition": "EUROPA LEAGUE",
+      "venue": "LOTTO PARK",
+      "home_team": "R. Union SG",
+      "home_score": 2,
+      "away_team": "Liverpool",
+      "away_score": 1
+    },
+    {
+      "date": "9 DECEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "SELHURST PARK",
+      "home_team": "Crystal Palace",
+      "home_score": 1,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "6 DECEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "BRAMALL LANE",
+      "home_team": "Sheff Utd",
+      "home_score": 0,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "3 DECEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 4,
+      "away_team": "Fulham",
+      "away_score": 3
+    },
+    {
+      "date": "30 NOVEMBER",
+      "competition": "EUROPA LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 4,
+      "away_team": "LASK",
+      "away_score": 0
+    },
+    {
+      "date": "25 NOVEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ETIHAD STADIUM",
+      "home_team": "Man City",
+      "home_score": 1,
+      "away_team": "Liverpool",
+      "away_score": 1
+    },
+    {
+      "date": "12 NOVEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 3,
+      "away_team": "Brentford",
+      "away_score": 0
+    },
+    {
+      "date": "9 NOVEMBER",
+      "competition": "EUROPA LEAGUE",
+      "venue": "STADIUM DE TOULOUSE",
+      "home_team": "Toulouse",
+      "home_score": 3,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "5 NOVEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "KENILWORTH ROAD",
+      "home_team": "Luton",
+      "home_score": 1,
+      "away_team": "Liverpool",
+      "away_score": 1
+    },
+    {
+      "date": "1 NOVEMBER",
+      "competition": "CARABAO CUP",
+      "venue": "VITALITY STADIUM",
+      "home_team": "Bournemouth",
+      "home_score": 1,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "29 OCTOBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 3,
+      "away_team": "Nottm Forest",
+      "away_score": 0
+    },
+    {
+      "date": "26 OCTOBER",
+      "competition": "EUROPA LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 5,
+      "away_team": "Toulouse",
+      "away_score": 1
+    },
+    {
+      "date": "21 OCTOBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 2,
+      "away_team": "Everton",
+      "away_score": 0
+    },
+    {
+      "date": "8 OCTOBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "AMERICAN EXPRESS STADIUM",
+      "home_team": "Brighton",
+      "home_score": 2,
+      "away_team": "Liverpool",
+      "away_score": 2
+    },
+    {
+      "date": "5 OCTOBER",
+      "competition": "EUROPA LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 2,
+      "away_team": "Union SG",
+      "away_score": 0
+    },
+    {
+      "date": "30 SEPTEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "TOTTENHAM HOTSPUR STADIUM",
+      "home_team": "Tottenham",
+      "home_score": 2,
+      "away_team": "Liverpool",
+      "away_score": 1
+    },
+    {
+      "date": "27 SEPTEMBER",
+      "competition": "CARABAO CUP",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 3,
+      "away_team": "Leicester",
+      "away_score": 1
+    },
+    {
+      "date": "24 SEPTEMBER",
+      "competition": "PREMIER LEAGUE",
+      "venue": "ANFIELD",
+      "home_team": "Liverpool",
+      "home_score": 3,
+      "away_team": "West Ham",
+      "away_score": 1
+    },
+    {
+      "date": "21 SEPTEMBER",
+      "competition": "EUROPA LEAGUE",
+      "venue": "RAIFFEISEN ARENA",
+      "home_team": "LASK",
+      "home_score": 1,
+      "away_team": "Liverpool",
+      "away_score": 3
+    }
+  ]
+}

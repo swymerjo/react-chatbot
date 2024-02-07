@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import OpenAI from "openai";
 import "./App.css";
+import axios from "axios";
 
 const apiKey = import.meta.env.VITE_OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey, dangerouslyAllowBrowser: true });
@@ -20,6 +21,9 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
+      const lfcData = await axios.get("lfc-data.json");
+      console.log(lfcData.data);
+
       const response = await openai.chat.completions.create({
         messages: messages as OpenAI.ChatCompletionCreateParams["messages"],
         model: "gpt-3.5-turbo",
@@ -28,6 +32,11 @@ function App() {
     };
     fetchData();
   }, [messages]);
+
+  useEffect(() => {
+    const fetchData = async () => {};
+    fetchData();
+  }, []);
 
   function updateMessages(messageInput: string) {
     const userMessage: OpenAI.ChatCompletionUserMessageParam = {
