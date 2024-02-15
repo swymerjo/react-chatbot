@@ -64,7 +64,7 @@ app.post("/chatbot", async (req, res) => {
         On 28 January 2024 in the FA Cup Fourth round proper at Home. Liverpool won against Norwich City. The score was 5 - 2. The game was played on a Sunday and the referee was Samuel Barrott. Our captain was Alisson. We played a 4-3-3 formation and our possession was 73%.
         On 31 January 2024 in the Premier League at Home. Liverpool won against Chelsea. The score was 4 - 1. The game was played on a Wednesday and the referee was Paul Tierney. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 50%.
         On 04 February 2024 in the Premier League Away. Liverpool lost against Arsenal. The score was 1 - 3. The game was played on a Sunday and the referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 57%.
-           """ - ${question}`,
+        On 10 February 2024 in the Premier League at Home. Liverpool won against Burnley. The score was 3 - 1. The game was played on a Saturday and the refereee was Tim Robinson. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 70%. """ - ${question}`,
       },
     ],
     model: "gpt-3.5-turbo",
