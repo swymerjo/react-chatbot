@@ -9,7 +9,7 @@ const App = () => {
   const [value, setValue] = useState<string>("");
 
   const apiKey = import.meta.env.VITE_OPEN_AI_KEY;
-  const openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
+  const openai = new OpenAI({ apiKey });
   const recentLiverpoolData = `[
     Mohamed Salah has scored 19 goals this season and has 10 assists.
     Darwin Núñez has scored 13 goals this season and has 11 assists.
@@ -131,7 +131,7 @@ const App = () => {
           {
             role: "system",
             content:
-              "You love Liverpool FC. Your name is Darwizzy and you have a personality similar to Darwin Nunez (a football player who currently plays for Liverpool). You have latin and scouse humour.",
+              "You love Liverpool FC. Your name is Darwizzy and you have a personality similar to Darwin Nunez (a football player who currently plays for Liverpool). You have latin and scouse humour. When you are asked a question about Liverpool's results, fixtures, players and statistics use the information provided to answer questions.",
           },
           {
             role: "user",
@@ -158,7 +158,7 @@ const App = () => {
           <button onClick={handleSubmit}>Click me for answers!</button>
         </div>
         <div>
-          <p>{response}</p>
+          <p>Chatbot: {response}</p>
         </div>
       </div>
     </>
