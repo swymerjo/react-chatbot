@@ -40,21 +40,31 @@ const recentLiverpoolData = `[
   The current Liverpool squad of 2023/24 has:
   Player: Alisson Becker. Position: Goalkeeper. Age: 31. National team: Brazil.
   Player: Caoimhín Kelleher. Position: Goalkeeper. Age: 25. National team: Ireland.
+  Player: Fabian Mrozek. Position: Goalkeeper. Age: 20. National team: Poland.
+  Player: Marcelo Pitaluga. Position: Goalkeeper. Age: 21. National team: Brazil.
+  Player: Vitezslav Jaros. Position: Goalkeeper. Age: 22. National team: Czech Republic.
   Player: Adrián. Position: Goalkeeper. Age: 37. National team: Spain.
   Player: Ibrahima Konaté. Position: Centre-Back. Age: 24. National team: France.
   Player: Virgil van Dijk. Position: Centre-Back. Age: 32. National team: Netherlands.
   Player: Joe Gomez. Position: Centre-Back. Age: 26. National team: England.
   Player: Joel Matip. Position: Centre-Back. Age: 32. National team: Cameroon.
   Player: Jarell Quansah. Position: Centre-Back. Age: 21. National team: England.
-  Player: Rhys Williams. Position: Centre-Back. Age: 23. National team: England.
   Player: Andrew Robertson. Position: Left-Back. Age: 29. National team: Scotland.
   Player: Konstantinos Tsimikas. Position: Left-Back. Age: 27. National team: Greece.
   Player: Trent Alexander-Arnold. Position: Right-Back. Age: 25. National team: England.
   Player: Conor Bradley. Position: Right-Back. Age: 20. National team: Northern Ireland.
   Player: Wataru Endo. Position: Defensive Midfield. Age: 31. National team: Japan.
+  Player: Luke Chambers. Position: Defensive Midfield. Age: 19. National team: England.
   Player: Stefan Bajcetic. Position: Defensive Midfield. Age: 19. National team: Spain.
+  Player: Amara Nallo. Position: Defensive Midfield. Age: 17. National team: England.
+  Player: Owen Beck. Position: Defensive Midfield. Age: 21. National team: Wales.
+  Player: James McConnell. Position: Central Midfield. Age: 19. National team: England.
+  Player: Bobby Clark. Position: Central Midfield. Age: 19. National team: England.
   Player: Dominik Szoboszlai. Position: Central Midfield. Age: 23. National team: Hungary.
   Player: Alexis Mac Allister. Position: Central Midfield. Age: 25. National team: Argentina.
+  Player: Lewis Koumas. Position: Central Midfield. Age: 18. National team: Wales.
+  Player: Calum Scanlon. Position: Central Midfield. Age: 19. National team: England. 
+  Player: Trey Nyoni. Position: Central Midfield. Age: 16. National team: England.
   Player: Ryan Gravenberch. Position: Central Midfield. Age: 21. National team: Netherlands.
   Player: Curtis Jones. Position: Central Midfield. Age: 23. National team: England.
   Player: Thiago. Position: Central Midfield. Age: 32. National team: Spain Brazil.
@@ -64,6 +74,9 @@ const recentLiverpoolData = `[
   Player: Diogo Jota. Position: Left Winger. Age: 27. National team: Portugal.
   Player: Mohamed Salah. Position: Right Winger. Age: 31. National team: Egypt.
   Player: Ben Doak. Position: Right Winger. Age: 18. National team: Scotland.
+  Player: Kaide Gordon. Position: Centre-Forward. Age 19. National team: England.
+  Player: Jayden Danns. Position: Centre-Forward. Age: 18. National team: England.
+  Player: Thomas Hill. Position: Centre-Forward. Age: 21. National team: Wales.
   Player: Darwin Núñez. Position: Centre-Forward. Age: 24. National team: Uruguay.
 
 
@@ -108,6 +121,7 @@ const recentLiverpoolData = `[
   On 17 February 2024 in the Premier League Away. Liverpool won against Brentford. The score was 4 - 1. The game was played on a Saturday and the referee was Michael Oliver. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 62%. Darwin Nunez scored a goal in the 35th minute with a Diego Jota assist. Alexis Mac Allister scored a goal in the 55th minute with a Mo Salah assist. Mohamed Salah scored a goal in the 68th minute with a Cody Gakpo assist. Ivan Toney scored a goal in the 75th minute. Cody Gakpo scored a goal in the 86th minute with a Luis Diaz assist.
   On 21 February 2024 in the Premier League at Home. Liverpool won against Luton. The score was 4 - 1. The game was played on a Wednesday and the referee was Andy Madley. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 60%. Chiedozie Ogbene scored for Brentford in the 12th minute. Virgil van Dijk scored in the 56th minute with an Alexis Mac Allister assist. Cody Gakpo scored in the 58th minute with an Alexis Mac Allister assist. Luis Diaz scored in the 71st minute with an Andy Robertson assist. Harvey Elliott scored in the 90th minute.
   On 25 Februrary 2024 in the EFL Cup final at Wembley. Liverpool won against Chelsea. The score was 1 - 0 after extra-time. The game was played on a Sunday and the referee was Chris Kavanagh. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 54%. Virgil van Dijk scored in he 118th minute with an assist from Kostas Tsimikas. Liverpool won the EFL cup as a result! 
+  On 28 February 2024 in the FA Cup Fifth round proper at Home. Liverpool won against Southampton. The score was 3 - 0. The game was played on a Wednesday and the referee was Craig Pawson. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 52%. Lewis Koumas scored in the 44th minute with an assist from Bobby Clark. Jayden Danns scored in the 88th minute. Jayden Danns scored again in the 90th minute with an assist from Cody Gakpo.
 
 ].`;
 
