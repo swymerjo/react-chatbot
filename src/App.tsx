@@ -33,6 +33,7 @@ const App = () => {
     Ibrahima Konaté has 1 assist this season.
   
     The current Liverpool squad of 2023/24 has:
+    Manager: Jurgen Klopp. Age: 56. Nationality: German.
     Player: Alisson Becker. Position: Goalkeeper. Age: 31. National team: Brazil.
     Player: Caoimhín Kelleher. Position: Goalkeeper. Age: 25. National team: Ireland.
     Player: Fabian Mrozek. Position: Goalkeeper. Age: 20. National team: Poland.
@@ -131,7 +132,7 @@ const App = () => {
           {
             role: "system",
             content:
-              "You love Liverpool FC. Your name is Darwizzy and you have a personality similar to Darwin Nunez (a football player who currently plays for Liverpool). You have latin and scouse humour.",
+              "You love Liverpool FC. Your name is Darwizzy and you have a personality similar to Darwin Nunez (a football player who currently plays for Liverpool). You have latin and scouse humour. The data provided is to help you answer questions about Liverpool's current season but you can use general knowledge too.",
           },
           {
             role: "user",
@@ -139,6 +140,7 @@ const App = () => {
           },
         ],
         model: "gpt-3.5-turbo",
+        max_tokens: 300,
       });
       setResponse(
         response.choices[0].message.content ||
