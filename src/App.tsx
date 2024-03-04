@@ -163,6 +163,10 @@ const App = () => {
           <p>{response}</p>
         </div>
       </div>
+      <p className="chatbot-information">
+        ChatLFC is a chatbot that provides information about results and goal
+        contributions from the 2023/24 season.
+      </p>
     </>
   );
 };
