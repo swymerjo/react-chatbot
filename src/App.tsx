@@ -9,7 +9,7 @@ const App = () => {
   const [value, setValue] = useState<string>("");
 
   const apiKey = import.meta.env.VITE_OPEN_AI_KEY;
-  const openai = new OpenAI({ apiKey });
+  const openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
   const recentLiverpoolData = `[
     Mohamed Salah has scored 19 goals this season and has 10 assists.
     Darwin Núñez has scored 14 goals this season and has 11 assists.
