@@ -12,15 +12,15 @@ const App = () => {
   const openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
   const recentLiverpoolData = `[
     Mohamed Salah has scored 19 goals this season and has 10 assists.
-    Darwin Núñez has scored 14 goals this season and has 11 assists.
+    Darwin Núñez has scored 16 goals this season and has 11 assists.
     Diogo Jota has scored 14 goals this season and 4 assists.
-    Luis Díaz has scored 10 goals this season and has 3 assists.
+    Luis Díaz has scored 11 goals this season and has 3 assists.
     Cody Gakpo has scored 11 goals this season and has 4 assists.
-    Dominik Szoboszlai has scored 5 goals this season and has 3 assists.
+    Dominik Szoboszlai has scored 6 goals this season and has 3 assists.
     Trent Alexander-Arnold has scored 2 goals this season and has 10 assists.
-    Alexis Mac Allister has scored 2 goals this season and has 5 assists.
+    Alexis Mac Allister has scored 4 goals this season and has 6 assists.
     Virgil van Dijk has scored 4 goals this season and has 2 assists.
-    Harvey Elliott has scored 2 goals this season and has 2 assists.
+    Harvey Elliott has scored 2 goals this season and has 5 assists.
     Curtis Jones has scored 5 goals this season and has 3 assists.
     Wataru Endo has scored 2 goals this season and has 1 assist.
     Andy Robertson has scored 1 goal this season and has 1 assist.
@@ -119,6 +119,8 @@ const App = () => {
     On 25 Februrary 2024 in the EFL Cup final at Wembley. Liverpool won against Chelsea. The score was 1 - 0 after extra-time. The game was played on a Sunday and the referee was Chris Kavanagh. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 54%. Virgil van Dijk scored in he 118th minute with an assist from Kostas Tsimikas. Liverpool won the EFL cup as a result! 
     On 28 February 2024 in the FA Cup Fifth round proper at Home. Liverpool won against Southampton. The score was 3 - 0. The game was played on a Wednesday and the referee was Craig Pawson. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 52%. Lewis Koumas scored in the 44th minute with an assist from Bobby Clark. Jayden Danns scored in the 88th minute. Jayden Danns scored again in the 90th minute with an assist from Cody Gakpo.
     On 02 March 2024 in the Premier League Away. Liverpool won against Nottingham Forest. The score was 1 - 0. The game was played on a Saturday and the referee was Paul Tierney. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 69%. Darwin Nunez scored in the 99th minute, which is our latest ever goal, with an assist from Alexis Mac Allister.
+    On 07 March 2024 in the Europa League Round of 16 Away. Liverpool won against Sparta Prague. The score was 5 - 1. The game was played on a Thursday and the referee was Jose Sanchez. Our captain was Andrew Robertson. We played a 4-3-3 formation and our possession was 62%. Alexis Mac Allister scored a penalty in the 6th minute. Darwin Nunez scored in the 25th minute with an assist from Harvey Elliott. Darwin Nunez scored again in the 45(+3)th minute with an assist from Alexis Mac Allister. Conor Bradley scored an own goal in the 46th minute. Luis Diaz scored in the 53rd minute with an assist from Harvey Elliott. Dominik Szoboszlai scored in the 94th minute with an assist from Harvey Elliott.
+    On 10 March 2024 in the Premier League at Home. Liverepool drew against Manchester City. The score was 1 - 1. The game was played on a Sunday and the referee was Michael Oliver. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 53%. John Stones scored for Manchester City in the 23rd minute with an assist from Kevin De Bruyne. Alexis Mac Allister scored a penalty in the 50th minute.
   ].`;
 
   function onChange(e: React.ChangeEvent<HTMLInputElement>) {
