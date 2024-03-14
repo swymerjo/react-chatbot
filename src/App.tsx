@@ -36,6 +36,11 @@ const App = () => {
           <p>Chatbot: {response}</p>
         </div>
       </div>
+      <p className="disclaimer">
+        This chatbot provides information about results and goal contributions
+        for LFC from the 2023/24 season. The app is a WIP and more data is being
+        added daily.
+      </p>
     </>
   );
 };
