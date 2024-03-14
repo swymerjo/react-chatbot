@@ -62,5 +62,6 @@ p {
 
 .disclaimer {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 29.2em;
+  border: 0.3em solid #b20000;
 }
