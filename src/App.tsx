@@ -30,7 +30,9 @@ const App = () => {
           <input type="text" value={value} onChange={onChange}></input>
         </div>
         <div>
-          <button onClick={handleSubmit}>Click me for answers!</button>
+          <button onClick={handleSubmit} disabled={!value.trim()}>
+            Click me for answers!
+          </button>
         </div>
         <div>
           <p>Chatbot: {response}</p>
