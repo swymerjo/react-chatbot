@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import axios from "axios";
 import "./App.css";
@@ -13,13 +15,9 @@ const App = () => {
     setValue(e.target.value);
 
   const handleSubmit = async () => {
-    const response = await axios.post(
-      "https://ai-in-react-backend.onrender.com/chatbot",
-      {
-        question: value,
-      }
-    );
-    setResponse(response.data);
+    const response = (await axios.post("/chat", { question: value })).data
+      .choices[0].message.content;
+    setResponse(response);
     setValue("");
   };
 
