@@ -42,6 +42,7 @@ const App = () => {
         for LFC from the 2023/24 season. The app is a WIP and more data is being
         added daily.
       </p>
+      <h4>Created by Sammy-Jo Wymer. Copyright &copy; 2024</h4>
     </>
   );
 };
