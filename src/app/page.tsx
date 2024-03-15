@@ -23,6 +23,7 @@ const App = () => {
 
   return (
     <>
+      <h1 className="header">🔴 ChatLFC ⚽️</h1>
       <div className="container">
         <div>
           <input type="text" value={value} onChange={onChange}></input>
