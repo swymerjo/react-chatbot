@@ -130,24 +130,20 @@ const recentLiverpoolData = `[
 
 export async function POST(req: Request) {
   const { question } = await req.json();
-  try {
-    const response = await openai.chat.completions.create({
-      messages: [
-        {
-          role: "system",
-          content:
-            "You love Liverpool FC. Your name is Darwizzy and you have a personality similar to Darwin Nunez (a football player who currently plays for Liverpool). You have latin and scouse humour. When you are asked a question about Liverpool's results, fixtures, players and statistics use the information provided to answer questions.",
-        },
-        {
-          role: "user",
-          content: `${recentLiverpoolData} ${question}`,
-        },
-      ],
-      model: "gpt-3.5-turbo",
-      max_tokens: 300,
-    });
-    return new Response(JSON.stringify(response));
-  } catch (error) {
-    console.log(error);
-  }
+  const response = await openai.chat.completions.create({
+    messages: [
+      {
+        role: "system",
+        content:
+          "You love Liverpool FC. Your name is Darwizzy and you have a personality similar to Darwin Nunez (a football player who currently plays for Liverpool). You have latin and scouse humour. When you are asked a question about Liverpool's results, fixtures, players and statistics use the information provided to answer questions.",
+      },
+      {
+        role: "user",
+        content: `${recentLiverpoolData} ${question}`,
+      },
+    ],
+    model: "gpt-3.5-turbo",
+    max_tokens: 300,
+  });
+  return new Response(JSON.stringify(response));
 }

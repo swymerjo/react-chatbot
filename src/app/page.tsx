@@ -18,11 +18,15 @@ const App = () => {
 
   const handleSubmit = async () => {
     setLoading(true);
-    const response = (await axios.post("/chat", { question: value })).data
-      .choices[0].message.content;
-    setResponse(response);
-    setLoading(false);
-    setQuestion(value);
+    try {
+      const response = (await axios.post("/chat", { question: value })).data
+        .choices[0].message.content;
+      setResponse(response);
+      setLoading(false);
+      setQuestion(value);
+    } catch (error) {
+      console.log("Error details:", error);
+    }
   };
 
   return (
