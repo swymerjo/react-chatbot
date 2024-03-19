@@ -47,10 +47,10 @@ const App = () => {
           </button>
         </div>
         <div>
-          <p className="response">Chatbot: {response}</p>
+          <p className="box">Chatbot: {response}</p>
         </div>
       </div>
-      <p className="disclaimer">
+      <p className="box disclaimer">
         This chatbot provides information about results and goal contributions
         for LFC from the 2023/24 season. The app is a WIP and more data is being
         added daily.
