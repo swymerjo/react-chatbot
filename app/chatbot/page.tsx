@@ -19,8 +19,8 @@ const Chatbot = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const response = (await axios.post("/chat", { question: value })).data
-        .choices[0].message.content;
+      const response = (await axios.post("/api/openai", { question: value }))
+        .data.choices[0].message.content;
       setResponse(response);
       setLoading(false);
       setQuestion(value);
