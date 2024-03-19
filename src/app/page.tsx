@@ -10,14 +10,17 @@ const App = () => {
     "Hi there! How can I assist you?"
   );
   const [value, setValue] = useState<string>("");
+  const [loading, setLoading] = useState(false);
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) =>
     setValue(e.target.value);
 
   const handleSubmit = async () => {
+    setLoading(true);
     const response = (await axios.post("/chat", { question: value })).data
       .choices[0].message.content;
     setResponse(response);
+    setLoading(false);
     setValue("");
   };
 
@@ -30,7 +33,7 @@ const App = () => {
         </div>
         <div>
           <button onClick={handleSubmit} disabled={!value.trim()}>
-            Click me for answers!
+            {loading ? "Just one sec, lad..." : "Click me for answers!"}
           </button>
         </div>
         <div>
