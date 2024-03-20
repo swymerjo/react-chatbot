@@ -8,10 +8,6 @@ body {
   background-color: rgb(39, 40, 41);
 }
 
-h4 {
-  color: #fff;
-  margin: 0.5em;
-}
 input {
   width: 100%;
   padding: 1em;
@@ -38,7 +34,7 @@ button:hover {
   background-color: #b20000;
 }
 
-.container {
+.chatbot-container {
   max-width: 35em;
   margin: auto;
   margin-top: 1em;
@@ -79,4 +75,10 @@ button:hover {
   margin: 0 auto;
   max-width: 29.2em;
   border: 0.3em solid #b20000;
+}
+
+.copyright-text {
+  color: white;
+  font-weight: bold;
+  margin-top: 0.5em;
 }
