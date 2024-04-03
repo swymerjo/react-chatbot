@@ -143,6 +143,7 @@ export async function POST(req: Request) {
         content: `${recentLiverpoolData} ${question}`,
       },
     ],
+    temperature: 0.1,
     model: "gpt-3.5-turbo",
     max_tokens: 300,
   });
