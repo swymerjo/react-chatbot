@@ -48,7 +48,7 @@ function Chatbot() {
         </button>
       </form>
       <p className="box" tabIndex={0}>
-        Chatbot: {response}
+        Darwizzy: {response}
       </p>
     </main>
   );
