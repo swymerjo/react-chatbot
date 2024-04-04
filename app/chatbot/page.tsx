@@ -6,9 +6,7 @@ import "../App.css";
 import React from "react";
 
 function Chatbot() {
-  const [response, setResponse] = useState<string>(
-    "Hi there! How can I assist you?"
-  );
+  const [response, setResponse] = useState<string>();
   const [value, setValue] = useState<string>("");
   const [question, setQuestion] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
@@ -39,6 +37,7 @@ function Chatbot() {
           id="question-input"
           aria-label="ask your question"
           value={value}
+          placeholder="How can I help, laa?"
           onChange={onChange}
           onFocus={() => setValue("")}
           tabIndex={0}
@@ -47,9 +46,11 @@ function Chatbot() {
           {loading ? "Just one sec, lad..." : "Click me for answers!"}
         </button>
       </form>
-      <p className="box" tabIndex={0}>
-        Darwizzy: {response}
-      </p>
+      {response ? (
+        <p className="box" tabIndex={0}>
+          Darwizzy: {response}
+        </p>
+      ) : null}
     </main>
   );
 }
