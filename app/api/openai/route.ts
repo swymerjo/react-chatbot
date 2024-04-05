@@ -33,33 +33,33 @@ const recentLiverpoolData = `[
   Kaide Gordon has scored 0 goals and has 0 assists overall in his whole Liverpool career.
   Joel Matip has scored 11 goals and has 6 assists overall in his whole Liverpool career.
 
-  Virgil van Dijk has won 21/33 tackles this season.
-  Luis Diaz has won 25/30 tackles this season.
-  Joe Gomez has won 47/57 tackles this season.
-  Alexis Mac Allister has won 49/73 tackles this season.
-  Darwin Nunez has won 24/27 tackles this season.
-  Mohamed Salah has won 9/13 tackles this season.
-  Dominik Szoboszlai has won 21/31 tackles this season.
-  Cody Gakpo has won 18/21 tackles this season.
-  Harvey Elliott has won 26/29 tackles this season.
-  Ibrahima Konate has won 28/40 tackles this season.
-  Wataru Endo has won 33/44 tackles this season.
-  Trent Alexander-Arnold has won 24/33 tackles this season.
-  Jarell Quansah has won 21/22 tackles this season.
-  Curtis Jones has won 19/27 tackles this season.
-  Ryan Gravenberch has won 21/31 tackles this season.
-  Diogo Jota has won 17/26 tackles this season.
-  Andy Robertson has won 23/30 tackles this season.
-  Kostas Tsimikas has won 26/29 tackles this season.
-  Conor Bradley has won 32/38 tackles this season.
-  Joel Matip has won 6/12 tackles this season.
-  Bobby Clark has won 8/8 tackles this season.
-  Ben Doak has won 0/2 tackles this season.
-  James McConnell has won 2/3 tackles this season.
-  Luke Chambers has won 1/2 tackles this season.
-  Stefan Bajcetic has won 1/1 tackles this season.
-  Calum Scanlon has won 1/1 tackles this season.
-  Owen Beck has won 1/2 tackles this season.
+  Virgil van Dijk has won 21/33 tackles this season. He has intercepted the ball 43 times.
+  Luis Diaz has won 25/30 tackles this season. He has intercepted the ball 5 times.
+  Joe Gomez has won 47/57 tackles this season. He has intercepted the ball 33 times.
+  Alexis Mac Allister has won 49/73 tackles this season. He has intercepted the ball 34 times.
+  Darwin Nunez has won 24/27 tackles this season. He has intercepted the ball 3 times.
+  Mohamed Salah has won 9/13 tackles this season. He has intercepted the ball 3 times.
+  Dominik Szoboszlai has won 21/31 tackles this season. He has intercepted the ball 19 times.
+  Cody Gakpo has won 18/21 tackles this season. He has intercepted the ball 12 times.
+  Harvey Elliott has won 26/29 tackles this season. He has intercepted the ball 12 times.
+  Ibrahima Konate has won 28/40 tackles this season. He has intercepted the ball 36 times.
+  Wataru Endo has won 33/44 tackles this season. He has intercepted the ball 29 times.
+  Trent Alexander-Arnold has won 24/33 tackles this season. He has intercepted the ball 29 times.
+  Jarell Quansah has won 21/22 tackles this season. He has intercepted the ball 27 times.
+  Curtis Jones has won 19/27 tackles this season. He has intercepted the ball 13 times.
+  Ryan Gravenberch has won 21/31 tackles this season. He has intercepted the ball 23 times.
+  Diogo Jota has won 17/26 tackles this season. He has intercepted the ball 10 times.
+  Andy Robertson has won 23/30 tackles this season. He has intercepted the ball 13 times.
+  Kostas Tsimikas has won 26/29 tackles this season. He has intercepted the ball 21 times.
+  Conor Bradley has won 32/38 tackles this season. He has intercepted the ball 12 times.
+  Joel Matip has won 6/12 tackles this season. He has intercepted the ball 14 times.
+  Bobby Clark has won 8/8 tackles this season. He has intercepted the ball 3 times.
+  Ben Doak has won 0/2 tackles this season. He has intercepted the ball 1 time.
+  James McConnell has won 2/3 tackles this season. He has intercepted the ball 3 times.
+  Luke Chambers has won 1/2 tackles this season. He has intercepted the ball 2 times.
+  Stefan Bajcetic has won 1/1 tackles this season. He has intercepted the ball 1 time.
+  Calum Scanlon has won 1/1 tackles this season. He has intercepted the ball 1 time.
+  Owen Beck has won 1/2 tackles this season. He has intercepted the ball 0 times.
 
   The current Liverpool squad of 2023/24 has:
   Manager: Jurgen Klopp. Age: 56. Nationality: German.
