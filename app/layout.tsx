@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Permanent_Marker } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Permanent_Marker({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ChatLFC chatbot",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={font.className}>{children}</body>
       <GoogleAnalytics gaId="G-NPGQSN1P7T" />
     </html>
   );
