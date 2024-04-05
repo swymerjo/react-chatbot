@@ -12,7 +12,7 @@ const recentLiverpoolData = `[
   Dominik Szoboszlai has scored 7 goals this season and has 4 assists. He has scored 7 goals and has 4 assists overall in his whole Liverpool career.
   Trent Alexander-Arnold has scored 2 goals this season and has 10 assists. He has scored 18 goals and has 79 assists overall in his whole Liverpool career.
   Alexis Mac Allister has scored 6 goals this season and has 7 assists. He has scored 6 goals and has 7 assists overall in his whole Liverpool career.
-  Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 24 goals and has 9 assists overall in his whole Liverpool career.
+  Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 24 goals and has 9 assists overall in his whole Liverpool career. 
   Harvey Elliott has scored 3 goals this season and has 7 assists. He has scored 9 goals and has 9 assists overall in his whole Liverpool career.
   Curtis Jones has scored 5 goals this season and has 3 assists. He has scored 16 goals and has 13 assists overall in his whole Liverpool career.
   Wataru Endo has scored 2 goals this season and has 1 assist. He has scored 2 goals and has 1 assist overall in his whole Liverpool career.
@@ -33,48 +33,76 @@ const recentLiverpoolData = `[
   Kaide Gordon has scored 0 goals and has 0 assists overall in his whole Liverpool career.
   Joel Matip has scored 11 goals and has 6 assists overall in his whole Liverpool career.
 
+  Virgil van Dijk has won 21/33 tackles this season.
+  Luis Diaz has won 25/30 tackles this season.
+  Joe Gomez has won 47/57 tackles this season.
+  Alexis Mac Allister has won 49/73 tackles this season.
+  Darwin Nunez has won 24/27 tackles this season.
+  Mohamed Salah has won 9/13 tackles this season.
+  Dominik Szoboszlai has won 21/31 tackles this season.
+  Cody Gakpo has won 18/21 tackles this season.
+  Harvey Elliott has won 26/29 tackles this season.
+  Ibrahima Konate has won 28/40 tackles this season.
+  Wataru Endo has won 33/44 tackles this season.
+  Trent Alexander-Arnold has won 24/33 tackles this season.
+  Jarell Quansah has won 21/22 tackles this season.
+  Curtis Jones has won 19/27 tackles this season.
+  Ryan Gravenberch has won 21/31 tackles this season.
+  Diogo Jota has won 17/26 tackles this season.
+  Andy Robertson has won 23/30 tackles this season.
+  Kostas Tsimikas has won 26/29 tackles this season.
+  Conor Bradley has won 32/38 tackles this season.
+  Joel Matip has won 6/12 tackles this season.
+  Bobby Clark has won 8/8 tackles this season.
+  Ben Doak has won 0/2 tackles this season.
+  James McConnell has won 2/3 tackles this season.
+  Luke Chambers has won 1/2 tackles this season.
+  Stefan Bajcetic has won 1/1 tackles this season.
+  Calum Scanlon has won 1/1 tackles this season.
+  Owen Beck has won 1/2 tackles this season.
+
   The current Liverpool squad of 2023/24 has:
   Manager: Jurgen Klopp. Age: 56. Nationality: German.
-  Player: Alisson Becker. Position: Goalkeeper. Age: 31. National team: Brazil.
-  Player: Caoimhín Kelleher. Position: Goalkeeper. Age: 25. National team: Ireland.
+  Player: Alisson Becker. Position: Goalkeeper. Age: 31. National team: Brazil. He is right-footed.
+  Player: Caoimhín Kelleher. Position: Goalkeeper. Age: 25. National team: Ireland. He is right-footed.
   Player: Fabian Mrozek. Position: Goalkeeper. Age: 20. National team: Poland.
   Player: Marcelo Pitaluga. Position: Goalkeeper. Age: 21. National team: Brazil.
   Player: Vitezslav Jaros. Position: Goalkeeper. Age: 22. National team: Czech Republic.
-  Player: Adrián. Position: Goalkeeper. Age: 37. National team: Spain.
-  Player: Ibrahima Konaté. Position: Centre-Back. Age: 24. National team: France.
-  Player: Virgil van Dijk. Position: Centre-Back. Age: 32. National team: Netherlands.
-  Player: Joe Gomez. Position: Centre-Back. Age: 26. National team: England.
-  Player: Joel Matip. Position: Centre-Back. Age: 32. National team: Cameroon.
-  Player: Jarell Quansah. Position: Centre-Back. Age: 21. National team: England.
-  Player: Andrew Robertson. Position: Left-Back. Age: 30. National team: Scotland.
-  Player: Konstantinos Tsimikas. Position: Left-Back. Age: 27. National team: Greece.
-  Player: Trent Alexander-Arnold. Position: Right-Back. Age: 25. National team: England.
-  Player: Conor Bradley. Position: Right-Back. Age: 20. National team: Northern Ireland.
-  Player: Wataru Endo. Position: Defensive Midfield. Age: 31. National team: Japan.
-  Player: Luke Chambers. Position: Defensive Midfield. Age: 19. National team: England.
-  Player: Stefan Bajcetic. Position: Defensive Midfield. Age: 19. National team: Spain.
+  Player: Adrián. Position: Goalkeeper. Age: 37. National team: Spain. He is right-footed.
+  Player: Ibrahima Konaté. Position: Centre-Back. Age: 24. National team: France. He is right-footed.
+  Player: Virgil van Dijk. Position: Centre-Back. Age: 32. National team: Netherlands. He is right-footed.
+  Player: Joe Gomez. Position: Centre-Back. Age: 26. National team: England. He is right-footed.
+  Player: Joel Matip. Position: Centre-Back. Age: 32. National team: Cameroon. He is right-footed.
+  Player: Jarell Quansah. Position: Centre-Back. Age: 21. National team: England. He is right-footed.
+  Player: Andy Robertson. Position: Left-Back. Age: 30. National team: Scotland. He is left-footed.
+  Player: Konstantinos Tsimikas. Position: Left-Back. Age: 27. National team: Greece. He is left-footed.
+  Player: Trent Alexander-Arnold. Position: Right-Back. Age: 25. National team: England. He is right-footed.
+  Player: Conor Bradley. Position: Right-Back. Age: 20. National team: Northern Ireland. He is right-footed.
+  Player: Wataru Endo. Position: Defensive Midfield. Age: 31. National team: Japan. He is right-footed.
+  Player: Luke Chambers. Position: Defensive Midfield. Age: 19. National team: England. 
+  Player: Stefan Bajcetic. Position: Defensive Midfield. Age: 19. National team: Spain. He is right-footed.
   Player: Amara Nallo. Position: Defensive Midfield. Age: 17. National team: England.
   Player: Owen Beck. Position: Defensive Midfield. Age: 21. National team: Wales.
   Player: James McConnell. Position: Central Midfield. Age: 19. National team: England.
-  Player: Bobby Clark. Position: Central Midfield. Age: 19. National team: England.
-  Player: Dominik Szoboszlai. Position: Central Midfield. Age: 23. National team: Hungary.
-  Player: Alexis Mac Allister. Position: Central Midfield. Age: 25. National team: Argentina.
+  Player: Bobby Clark. Position: Central Midfield. Age: 19. National team: England. He is right-footed.
+  Player: Dominik Szoboszlai. Position: Central Midfield. Age: 23. National team: Hungary. He is right-footed.
+  Player: Alexis Mac Allister. Position: Central Midfield. Age: 25. National team: Argentina. He is right-footed.
   Player: Lewis Koumas. Position: Central Midfield. Age: 18. National team: Wales.
   Player: Calum Scanlon. Position: Central Midfield. Age: 19. National team: England. 
   Player: Trey Nyoni. Position: Central Midfield. Age: 16. National team: England.
-  Player: Ryan Gravenberch. Position: Central Midfield. Age: 21. National team: Netherlands.
-  Player: Curtis Jones. Position: Central Midfield. Age: 23. National team: England.
-  Player: Thiago. Position: Central Midfield. Age: 32. National team: Spain Brazil.
-  Player: Harvey Elliott. Position: Attacking Midfield. Age: 21. National team: England.
-  Player: Luis Díaz. Position: Left Winger. Age: 27. National team: Colombia.
-  Player: Cody Gakpo. Position: Left Winger. Age: 24. National team: Netherlands.
-  Player: Diogo Jota. Position: Left Winger. Age: 27. National team: Portugal.
-  Player: Mohamed Salah. Position: Right Winger. Age: 31. National team: Egypt.
-  Player: Ben Doak. Position: Right Winger. Age: 18. National team: Scotland.
+  Player: Ryan Gravenberch. Position: Central Midfield. Age: 21. National team: Netherlands. He is right-footed.
+  Player: Curtis Jones. Position: Central Midfield. Age: 23. National team: England. He is right-footed.
+  Player: Thiago. Position: Central Midfield. Age: 32. National team: Spain Brazil. He is right-footed.
+  Player: Harvey Elliott. Position: Attacking Midfield. Age: 21. National team: England. He is left-footed.
+  Player: Luis Díaz. Position: Left Winger. Age: 27. National team: Colombia. He is right-footed.
+  Player: Cody Gakpo. Position: Left Winger. Age: 24. National team: Netherlands. He is right-footed.
+  Player: Diogo Jota. Position: Left Winger. Age: 27. National team: Portugal. He is right-footed.
+  Player: Mohamed Salah. Position: Right Winger. Age: 31. National team: Egypt. He is left-footed.
+  Player: Ben Doak. Position: Right Winger. Age: 18. National team: Scotland. He is right-footed.
   Player: Kaide Gordon. Position: Centre-Forward. Age 19. National team: England.
   Player: Jayden Danns. Position: Centre-Forward. Age: 18. National team: England.
   Player: Thomas Hill. Position: Centre-Forward. Age: 21. National team: Wales.
-  Player: Darwin Núñez. Position: Centre-Forward. Age: 24. National team: Uruguay.
+  Player: Darwin Núñez. Position: Centre-Forward. Age: 24. National team: Uruguay. He is right-footed.
 
   Liverpool are unfortunately not in the Champions League this season, we are in the Europa League.
   Jurgen Klopp is our manager but he will leave at the end of the season, which is heart-breaking. The fan favourite to replace him was Xabi Alonso who is currently the manager of Bayer 04 Leverkusen and is having an amazing season with them but he recently said he will stay with Bayer 04 Leverkusen. The new favourite to replace Jurgen Klopp is Ruben Amorim from Sporting Lisbon.
@@ -84,7 +112,7 @@ const recentLiverpoolData = `[
   On 19 August 2023 in the Premier League at Home. Liverpool won against Bournemouth. The score was 3 - 1. The game was played on a Saturday and the referee was Thomas Bramall. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 64%. Antoine Semenyo scored for Bournemouth in the 3rd minute with an assist from Dominic Solanke. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 36th minute. Mohamed Salah missed a penalty in the 36th minute. Alexis Mac Allister was sent off for Liverpool in the 58th minute. Diogo Jota scored in the 62nd minute.
   On 27 August 2023 in the Premier League Away. Liverpool won against Newcastle Utd. The score was 2 - 1. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 41%. Anthony Gordon scored for Newcastle in the 25th minute. Virgil van Dijk was sent off for Liverpool in the 28th minute. Darwin Nunez scored in the 81st minute. Darwin Nunez scored again in the 93rd minute with an assist from Alexis Mac Allister.
   On 03 September 2023 in the Premier League at Home. Liverpool won against Aston Villa. The score was 3 - 0. The game was played on a Sunday and the referee was SiMonday Hooper. Our captain was Trent Alexander-Arnold. We played a 4-3-3 formation and our possession was 63%. Dominik Szoboszlai scored in the 3rd minute with an assist from Trent Alexander-Arnold. Matty Cash scored an own goal in the 22nd minute to make it 2-0 to Liverpool. Mohamed Salah scored in the 55th minute with an assist from Darwin Nunez.
-  On 16 September 2023 in the Premier League Away. Liverpool won against Wolves. The score was 3 - 1. The game was played on a Saturday and the referee was Michael Oliver. Our captain was Andrew Robertson. We played a 4-3-3 formation and our possession was 65%. Hwang Hee-chan scored for Wolves in the 7th minute with an assist from Pedro Neto. Cody Gakpo scored in the 55th minute with an assist from Mohamed Salah. Andrew Robertson scored in the 85th minute with an assist from Mohamed Salah. Hugo Bueno scored an own goal in the 91st minute to make it 3-1 to Liverpool.
+  On 16 September 2023 in the Premier League Away. Liverpool won against Wolves. The score was 3 - 1. The game was played on a Saturday and the referee was Michael Oliver. Our captain was Andy Robertson. We played a 4-3-3 formation and our possession was 65%. Hwang Hee-chan scored for Wolves in the 7th minute with an assist from Pedro Neto. Cody Gakpo scored in the 55th minute with an assist from Mohamed Salah. Andy Robertson scored in the 85th minute with an assist from Mohamed Salah. Hugo Bueno scored an own goal in the 91st minute to make it 3-1 to Liverpool.
   On 21 September 2023 in the Europa League Group stage Away. Liverpool won against LASK. The score was 3 - 1. The game was played on a Thursday and the referee was Marco Di Bello. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 66%. Florian Flecker scored for Lask in the 14th minute with an assist from Sascha Horvath. Darwin Nunez scored a penalty in the 56th minute. Luiz Diaz scored in the 63rd minute with an assist from Ryan Gravenberch. Mohamed Salah scored in the 88th minute with an assist from Darwin Nunez.
   On 24 September 2023 in the Premier League at Home. Liverpool won against West Ham. The score was 3 - 1. The game was played on a Sunday and the referee was Chris Kavanagh. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 63%. Mohamed Salah scored a penalty in the 16th minute. Jarrod Bowed scored for West Ham in the 42nd minute with an assist from Vladimír Coufal. Darwin Nunez scored in the 60th minute with an assist from Alexis Mac Allister. Diogo Jota scored in the 85th minute with an assist from Virgil van Dijk.
   On 27 September 2023 in the EFL Cup Third round at Home. Liverpool won against Leicester City. The score was 3 - 1. The game was played on a Wednesday and the referee was Tim Robinson. Our captain was Curtis Jones. We played a 4-3-3 formation and our possession was 57%. Kasey McAteer scored for Leicester in the 3rd minute with an assist from Yunus Akgün. Cody Gakpo scored in the 48th minute with an assist from Ryan Gravenberch. Dominik Szoboszlai scored in the 70th minute with an assist from Wataru Endo. Diogo Jota scored in the 89th minute with an assist from Jarell Quansah.
@@ -122,12 +150,12 @@ const recentLiverpoolData = `[
   On 25 Februrary 2024 in the EFL Cup final at Wembley. Liverpool won against Chelsea. The score was 1 - 0 after extra-time. The game was played on a Sunday and the referee was Chris Kavanagh. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 54%. Virgil van Dijk scored in he 118th minute with an assist from Kostas Tsimikas. Liverpool won the EFL cup as a result! 
   On 28 February 2024 in the FA Cup Fifth round proper at Home. Liverpool won against Southampton. The score was 3 - 0. The game was played on a Wednesday and the referee was Craig Pawson. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 52%. Lewis Koumas scored in the 44th minute with an assist from Bobby Clark. Jayden Danns scored in the 88th minute. Jayden Danns scored again in the 90th minute with an assist from Cody Gakpo.
   On 02 March 2024 in the Premier League Away. Liverpool won against Nottingham Forest. The score was 1 - 0. The game was played on a Saturday and the referee was Paul Tierney. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 69%. Darwin Nunez scored in the 99th minute, which is our latest ever goal, with an assist from Alexis Mac Allister.
-  On 07 March 2024 in the Europa League Round of 16 Away. Liverpool won against Sparta Prague. The score was 5 - 1. The game was played on a Thursday and the referee was Jose Sanchez. Our captain was Andrew Robertson. We played a 4-3-3 formation and our possession was 62%. Alexis Mac Allister scored a penalty in the 6th minute. Darwin Nunez scored in the 25th minute with an assist from Harvey Elliott. Darwin Nunez scored again in the 45(+3)th minute with an assist from Alexis Mac Allister. Conor Bradley scored an own goal in the 46th minute. Luis Diaz scored in the 53rd minute with an assist from Harvey Elliott. Dominik Szoboszlai scored in the 94th minute with an assist from Harvey Elliott.
+  On 07 March 2024 in the Europa League Round of 16 Away. Liverpool won against Sparta Prague. The score was 5 - 1. The game was played on a Thursday and the referee was Jose Sanchez. Our captain was Andy Robertson. We played a 4-3-3 formation and our possession was 62%. Alexis Mac Allister scored a penalty in the 6th minute. Darwin Nunez scored in the 25th minute with an assist from Harvey Elliott. Darwin Nunez scored again in the 45(+3)th minute with an assist from Alexis Mac Allister. Conor Bradley scored an own goal in the 46th minute. Luis Diaz scored in the 53rd minute with an assist from Harvey Elliott. Dominik Szoboszlai scored in the 94th minute with an assist from Harvey Elliott.
   On 10 March 2024 in the Premier League at Home. Liverepool drew against Manchester City. The score was 1 - 1. The game was played on a Sunday and the referee was Michael Oliver. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 53%. John Stones scored for Manchester City in the 23rd minute with an assist from Kevin De Bruyne. Alexis Mac Allister scored a penalty in the 50th minute.
-  On 14 March 2024 in the Europa League Round of 16 at Home. Liverpool won against Sparta Prague. The score was 6 - 1 (11 - 2 on aggregrate). The game was played on a Thursday and the referee was Artur Soares Dias. Our captain was Andrew Robertson. We played a 4-3-3 formation and our possession was 77%. Darwin Nunez scored in the 7th minute with an assist from Dominik Szoboszlai. Bobby Clark scored in the 8th minute with an assist from Mohamed Salah. Mohamed Salah scored in the 10th minute with an assist from Bobby Clark. Cody Gakpo scored in the 14th minute with an assist from Mohamed Salah. Veljko Birmančević scored for Sparta Prague in the 42nd minute with an assist from Ángelo Preciado. Dominik Szoboszlai scored in the 48th minute with an assist from Mohamed Salah. Cody Gakpo scored again in the 55th minute with an assist from Harvey Elliott. 
+  On 14 March 2024 in the Europa League Round of 16 at Home. Liverpool won against Sparta Prague. The score was 6 - 1 (11 - 2 on aggregrate). The game was played on a Thursday and the referee was Artur Soares Dias. Our captain was Andy Robertson. We played a 4-3-3 formation and our possession was 77%. Darwin Nunez scored in the 7th minute with an assist from Dominik Szoboszlai. Bobby Clark scored in the 8th minute with an assist from Mohamed Salah. Mohamed Salah scored in the 10th minute with an assist from Bobby Clark. Cody Gakpo scored in the 14th minute with an assist from Mohamed Salah. Veljko Birmančević scored for Sparta Prague in the 42nd minute with an assist from Ángelo Preciado. Dominik Szoboszlai scored in the 48th minute with an assist from Mohamed Salah. Cody Gakpo scored again in the 55th minute with an assist from Harvey Elliott. 
   On 17 March 2024 in the FA Cup Quarter Finals Away. Liverpool lost to Manchester United after extra time. The score was 4 - 3. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 59%. Scott McTominay scored for Manchester United in the 10th minute. Alexis Mac Allister scored in the 44th minute with an assist from Darwin Nunez. Salah scored in the 45(+2) minute. Antony scored for Manchester United in the 87th minute. Harvey Elliott scored in the 105th minute of extra time with an assist from Connor Bradley. Marcus Rashford scored for Manchester United in the 112th minute of extra time. Amad Diallo scored in the 120(+1) minute of extra time with an assist from Alejandro Garnacho. This result means that Liverpool are unfortunately knocked out of the FA Cup.
   On 31 March 2024 in the Premier League at Home. Liverpool won against Brighton. The score was 2 - 1. The game was played on a Sunday and the referee was David Coote. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 55%. Danny Welbeck scored for Brighton in the 2nd minute. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 65th minute with an assist from Alexis Mac Allister. This result took us to the top of the league.
-  On 4 April 2024 in the Premier League at Home, Liverpool won against Sheffield United. The score was 3 - 1. The game was played on a Thursday. The referee was Stuart Atwell. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 83%, which set a new Premier League record for possession percentage in a game. Darwin Nunez scored in the 17th minute. Conor Bradley scored an own goal in the 58th minute to make it 1 - 1. Alexis Mac Allister scored a beautiful goal in the 76th minute with an assist from Luis Diaz. Cody Gakpo scored in the 90th minute with an assist from Andrew Robertson.
+  On 4 April 2024 in the Premier League at Home, Liverpool won against Sheffield United. The score was 3 - 1. The game was played on a Thursday. The referee was Stuart Atwell. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 83%, which set a new Premier League record for possession percentage in a game. Darwin Nunez scored in the 17th minute. Conor Bradley scored an own goal in the 58th minute to make it 1 - 1. Alexis Mac Allister scored a beautiful goal in the 76th minute with an assist from Luis Diaz. Cody Gakpo scored in the 90th minute with an assist from Andy Robertson.
   On 7 April 2024 in the Premier League Away, Liverpool play against Manchester United.
   On 11 April 2024 in the Europa League at Home, Liverpool play against Atalanta.
   On 14 April 2024 in the Premier League at Home, Liverpool play against Crystal Palace.
