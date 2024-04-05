@@ -7,7 +7,7 @@ function Disclaimer() {
         added daily.
       </p>
       <p className="copyright-text" tabIndex={0}>
-        Created by Sammy-Jo Wymer. Copyright &copy; 2024
+        Copyright &copy; 2024
       </p>
     </footer>
   );
