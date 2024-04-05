@@ -5,18 +5,18 @@ const openai = new OpenAI({ apiKey: apiKey });
 
 const recentLiverpoolData = `[
   Mohamed Salah has scored 22 goals this season and has 13 assists. He has scored 210 goals and has 86 assists overall in his whole Liverpool career.
-  Darwin Núñez has scored 17 goals this season and has 12 assists. He has scored 21 goals and has 16 assists overall in his whole Liverpool career.
+  Darwin Núñez has scored 18 goals this season and has 12 assists. He has scored 22 goals and has 16 assists overall in his whole Liverpool career.
   Diogo Jota has scored 14 goals this season and 4 assists. He has scored 59 goals and has 19 assists overall in his whole Liverpool career.
-  Luis Díaz has scored 12 goals this season and has 3 assists. He has scored 26 goals and has 9 assists overall in his whole Liverpool career.
-  Cody Gakpo has scored 13 goals this season and has 4 assists. He has scored 22 goals and has 6 assists overall in his whole Liverpool career.
+  Luis Díaz has scored 12 goals this season and has 4 assists. He has scored 26 goals and has 10 assists overall in his whole Liverpool career.
+  Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 23 goals and has 6 assists overall in his whole Liverpool career.
   Dominik Szoboszlai has scored 7 goals this season and has 4 assists. He has scored 7 goals and has 4 assists overall in his whole Liverpool career.
   Trent Alexander-Arnold has scored 2 goals this season and has 10 assists. He has scored 18 goals and has 79 assists overall in his whole Liverpool career.
-  Alexis Mac Allister has scored 5 goals this season and has 7 assists. He has scored 5 goals and has 7 assists overall in his whole Liverpool career.
+  Alexis Mac Allister has scored 6 goals this season and has 7 assists. He has scored 6 goals and has 7 assists overall in his whole Liverpool career.
   Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 24 goals and has 9 assists overall in his whole Liverpool career.
   Harvey Elliott has scored 3 goals this season and has 7 assists. He has scored 9 goals and has 9 assists overall in his whole Liverpool career.
   Curtis Jones has scored 5 goals this season and has 3 assists. He has scored 16 goals and has 13 assists overall in his whole Liverpool career.
   Wataru Endo has scored 2 goals this season and has 1 assist. He has scored 2 goals and has 1 assist overall in his whole Liverpool career.
-  Andy Robertson has scored 1 goal this season and has 1 assist. He has scored 9 goals and has 64 assists overall in his whole Liverpool career.
+  Andy Robertson has scored 1 goal this season and has 2 assists. He has scored 9 goals and has 65 assists overall in his whole Liverpool career.
   Conor Bradley has scored 1 goal this season and has 6 assists. He has scored 1 goal and has 6 assists overall in his whole Liverpool career.
   Ryan Gravenberch has scored 3 goals this season and has 2 assists. He has scored 3 goals and has 2 assists overall in his whole Liverpool career.
   Jarell Quansah has scored 1 goal this season and has 3 assists. He has scored 1 goal and has 3 assists overall in his whole Liverpool career.
@@ -127,7 +127,7 @@ const recentLiverpoolData = `[
   On 14 March 2024 in the Europa League Round of 16 at Home. Liverpool won against Sparta Prague. The score was 6 - 1 (11 - 2 on aggregrate). The game was played on a Thursday and the referee was Artur Soares Dias. Our captain was Andrew Robertson. We played a 4-3-3 formation and our possession was 77%. Darwin Nunez scored in the 7th minute with an assist from Dominik Szoboszlai. Bobby Clark scored in the 8th minute with an assist from Mohamed Salah. Mohamed Salah scored in the 10th minute with an assist from Bobby Clark. Cody Gakpo scored in the 14th minute with an assist from Mohamed Salah. Veljko Birmančević scored for Sparta Prague in the 42nd minute with an assist from Ángelo Preciado. Dominik Szoboszlai scored in the 48th minute with an assist from Mohamed Salah. Cody Gakpo scored again in the 55th minute with an assist from Harvey Elliott. 
   On 17 March 2024 in the FA Cup Quarter Finals Away. Liverpool lost to Manchester United after extra time. The score was 4 - 3. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 59%. Scott McTominay scored for Manchester United in the 10th minute. Alexis Mac Allister scored in the 44th minute with an assist from Darwin Nunez. Salah scored in the 45(+2) minute. Antony scored for Manchester United in the 87th minute. Harvey Elliott scored in the 105th minute of extra time with an assist from Connor Bradley. Marcus Rashford scored for Manchester United in the 112th minute of extra time. Amad Diallo scored in the 120(+1) minute of extra time with an assist from Alejandro Garnacho. This result means that Liverpool are unfortunately knocked out of the FA Cup.
   On 31 March 2024 in the Premier League at Home. Liverpool won against Brighton. The score was 2 - 1. The game was played on a Sunday and the referee was David Coote. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 55%. Danny Welbeck scored for Brighton in the 2nd minute. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 65th minute with an assist from Alexis Mac Allister. This result took us to the top of the league.
-  On 4 April 2024 in the Premier League at Home, Liverpool play against Sheffield United.
+  On 4 April 2024 in the Premier League at Home, Liverpool won against Sheffield United. The score was 3 - 1. The game was played on a Thursday. The referee was Stuart Atwell. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 83%, which set a new Premier League record for possession percentage in a game. Darwin Nunez scored in the 17th minute. Conor Bradley scored an own goal in the 58th minute to make it 1 - 1. Alexis Mac Allister scored a screamer in the 76th minute with an assist from Luis Diaz. Cody Gakpo scored in the 90th minute with an assist from Andrew Robertson.
   On 7 April 2024 in the Premier League Away, Liverpool play against Manchester United.
   On 11 April 2024 in the Europa League at Home, Liverpool play against Atalanta.
   On 14 April 2024 in the Premier League at Home, Liverpool play against Crystal Palace.
