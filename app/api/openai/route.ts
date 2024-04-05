@@ -46,7 +46,7 @@ const recentLiverpoolData = `[
   Player: Joe Gomez. Position: Centre-Back. Age: 26. National team: England.
   Player: Joel Matip. Position: Centre-Back. Age: 32. National team: Cameroon.
   Player: Jarell Quansah. Position: Centre-Back. Age: 21. National team: England.
-  Player: Andrew Robertson. Position: Left-Back. Age: 29. National team: Scotland.
+  Player: Andrew Robertson. Position: Left-Back. Age: 30. National team: Scotland.
   Player: Konstantinos Tsimikas. Position: Left-Back. Age: 27. National team: Greece.
   Player: Trent Alexander-Arnold. Position: Right-Back. Age: 25. National team: England.
   Player: Conor Bradley. Position: Right-Back. Age: 20. National team: Northern Ireland.
@@ -65,7 +65,7 @@ const recentLiverpoolData = `[
   Player: Ryan Gravenberch. Position: Central Midfield. Age: 21. National team: Netherlands.
   Player: Curtis Jones. Position: Central Midfield. Age: 23. National team: England.
   Player: Thiago. Position: Central Midfield. Age: 32. National team: Spain Brazil.
-  Player: Harvey Elliott. Position: Attacking Midfield. Age: 20. National team: England.
+  Player: Harvey Elliott. Position: Attacking Midfield. Age: 21. National team: England.
   Player: Luis Díaz. Position: Left Winger. Age: 27. National team: Colombia.
   Player: Cody Gakpo. Position: Left Winger. Age: 24. National team: Netherlands.
   Player: Diogo Jota. Position: Left Winger. Age: 27. National team: Portugal.
