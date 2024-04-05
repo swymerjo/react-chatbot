@@ -11,7 +11,7 @@ const recentLiverpoolData = `[
   Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 23 goals and has 6 assists overall in his whole Liverpool career.
   Dominik Szoboszlai has scored 7 goals this season and has 4 assists. He has scored 7 goals and has 4 assists overall in his whole Liverpool career.
   Trent Alexander-Arnold has scored 2 goals this season and has 10 assists. He has scored 18 goals and has 79 assists overall in his whole Liverpool career.
-  Alexis Mac Allister has scored 6 goals this season and has 7 assists. He has scored 6 goals and has 7 assists overall in his whole Liverpool career.
+  Alexis Mac Allister has scored 6 goals this season and has 7 assists. He has scored 6 goals and has 7 assists overall in his whole Liverpool career. He has been a standout player this season
   Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 24 goals and has 9 assists overall in his whole Liverpool career. 
   Harvey Elliott has scored 3 goals this season and has 7 assists. He has scored 9 goals and has 9 assists overall in his whole Liverpool career.
   Curtis Jones has scored 5 goals this season and has 3 assists. He has scored 16 goals and has 13 assists overall in his whole Liverpool career.
