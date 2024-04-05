@@ -4,20 +4,20 @@ const apiKey = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey });
 
 const recentLiverpoolData = `[
-  Mohamed Salah has scored 22 goals this season and has 13 assists. He has scored 210 goals and has 86 assists overall in his whole Liverpool career.
-  Darwin Nunez has scored 18 goals this season and has 12 assists. He has scored 22 goals and has 16 assists overall in his whole Liverpool career.
-  Diogo Jota has scored 14 goals this season and 4 assists. He has scored 59 goals and has 19 assists overall in his whole Liverpool career.
-  Luis Díaz has scored 12 goals this season and has 4 assists. He has scored 26 goals and has 10 assists overall in his whole Liverpool career.
-  Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 23 goals and has 6 assists overall in his whole Liverpool career.
+  Mohamed Salah has scored 22 goals this season and has 13 assists. He has scored 208 goals and has 86 assists overall in his whole Liverpool career.
+  Darwin Nunez has scored 18 goals this season and has 12 assists. He has scored 33 goals and has 16 assists overall in his whole Liverpool career.
+  Diogo Jota has scored 14 goals this season and 4 assists. He has scored 55 goals and has 19 assists overall in his whole Liverpool career.
+  Luis Díaz has scored 12 goals this season and has 4 assists. He has scored 23 goals and has 10 assists overall in his whole Liverpool career.
+  Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 21 goals and has 6 assists overall in his whole Liverpool career.
   Dominik Szoboszlai has scored 7 goals this season and has 4 assists. He has scored 7 goals and has 4 assists overall in his whole Liverpool career.
   Trent Alexander-Arnold has scored 2 goals this season and has 10 assists. He has scored 18 goals and has 79 assists overall in his whole Liverpool career.
   Alexis Mac Allister has scored 6 goals this season and has 7 assists. He has scored 6 goals and has 7 assists overall in his whole Liverpool career. He has been a standout player this season
-  Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 24 goals and has 9 assists overall in his whole Liverpool career. 
-  Harvey Elliott has scored 3 goals this season and has 7 assists. He has scored 9 goals and has 9 assists overall in his whole Liverpool career.
+  Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 23 goals and has 9 assists overall in his whole Liverpool career. 
+  Harvey Elliott has scored 3 goals this season and has 7 assists. He has scored 9 goals and has 10 assists overall in his whole Liverpool career.
   Curtis Jones has scored 5 goals this season and has 3 assists. He has scored 16 goals and has 13 assists overall in his whole Liverpool career.
   Wataru Endo has scored 2 goals this season and has 1 assist. He has scored 2 goals and has 1 assist overall in his whole Liverpool career.
   Andy Robertson has scored 1 goal this season and has 2 assists. He has scored 9 goals and has 65 assists overall in his whole Liverpool career.
-  Conor Bradley has scored 1 goal this season and has 6 assists. He has scored 1 goal and has 6 assists overall in his whole Liverpool career.
+  Conor Bradley has scored 1 goal this season and has 7 assists. He has scored 1 goal and has 7 assists overall in his whole Liverpool career.
   Ryan Gravenberch has scored 3 goals this season and has 2 assists. He has scored 3 goals and has 2 assists overall in his whole Liverpool career.
   Jarell Quansah has scored 1 goal this season and has 3 assists. He has scored 1 goal and has 3 assists overall in his whole Liverpool career.
   Jayden Danns has scored 2 goals this season. He has scored 2 goals and has 0 assists overall in his whole Liverpool career.
