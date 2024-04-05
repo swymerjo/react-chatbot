@@ -5,7 +5,7 @@ const openai = new OpenAI({ apiKey: apiKey });
 
 const recentLiverpoolData = `[
   Mohamed Salah has scored 22 goals this season and has 13 assists. He has scored 210 goals and has 86 assists overall in his whole Liverpool career.
-  Darwin Núñez has scored 18 goals this season and has 12 assists. He has scored 22 goals and has 16 assists overall in his whole Liverpool career.
+  Darwin Nunez has scored 18 goals this season and has 12 assists. He has scored 22 goals and has 16 assists overall in his whole Liverpool career.
   Diogo Jota has scored 14 goals this season and 4 assists. He has scored 59 goals and has 19 assists overall in his whole Liverpool career.
   Luis Díaz has scored 12 goals this season and has 4 assists. He has scored 26 goals and has 10 assists overall in his whole Liverpool career.
   Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 23 goals and has 6 assists overall in his whole Liverpool career.
@@ -102,7 +102,7 @@ const recentLiverpoolData = `[
   Player: Kaide Gordon. Position: Centre-Forward. Age 19. National team: England.
   Player: Jayden Danns. Position: Centre-Forward. Age: 18. National team: England.
   Player: Thomas Hill. Position: Centre-Forward. Age: 21. National team: Wales.
-  Player: Darwin Núñez. Position: Centre-Forward. Age: 24. National team: Uruguay. He is right-footed.
+  Player: Darwin Nunez. Position: Centre-Forward. Age: 24. National team: Uruguay. He is right-footed.
 
   Liverpool are unfortunately not in the Champions League this season, we are in the Europa League.
   Jurgen Klopp is our manager but he will leave at the end of the season, which is heart-breaking. The fan favourite to replace him was Xabi Alonso who is currently the manager of Bayer 04 Leverkusen and is having an amazing season with them but he recently said he will stay with Bayer 04 Leverkusen. The new favourite to replace Jurgen Klopp is Ruben Amorim from Sporting Lisbon.
