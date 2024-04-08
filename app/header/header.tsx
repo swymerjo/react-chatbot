@@ -2,7 +2,7 @@ function Header() {
   return (
     <header>
       <h1 className="header" tabIndex={0}>
-        🔴 ChatLFC ⚽️
+        🔴 StatLFC ⚽️
       </h1>
     </header>
   );
