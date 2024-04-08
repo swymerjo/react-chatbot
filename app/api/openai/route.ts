@@ -4,10 +4,10 @@ const apiKey = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey });
 
 const recentLiverpoolData = `[
-  Mohamed Salah has scored 22 goals this season and has 13 assists. He has scored 208 goals and has 86 assists overall in his whole Liverpool career.
-  Darwin Nunez has scored 18 goals this season and has 12 assists. He has scored 33 goals and has 16 assists overall in his whole Liverpool career.
+  Mohamed Salah has scored 23 goals this season and has 13 assists. He has scored 209 goals and has 86 assists overall in his whole Liverpool career.
+  Darwin Nunez has scored 18 goals this season and has 13 assists. He has scored 33 goals and has 17 assists overall in his whole Liverpool career.
   Diogo Jota has scored 14 goals this season and 4 assists. He has scored 55 goals and has 19 assists overall in his whole Liverpool career.
-  Luis Díaz has scored 12 goals this season and has 4 assists. He has scored 23 goals and has 10 assists overall in his whole Liverpool career.
+  Luis Díaz has scored 13 goals this season and has 4 assists. He has scored 24 goals and has 10 assists overall in his whole Liverpool career.
   Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 21 goals and has 6 assists overall in his whole Liverpool career.
   Dominik Szoboszlai has scored 7 goals this season and has 4 assists. He has scored 7 goals and has 4 assists overall in his whole Liverpool career.
   Trent Alexander-Arnold has scored 2 goals this season and has 10 assists. He has scored 18 goals and has 79 assists overall in his whole Liverpool career.
@@ -33,25 +33,25 @@ const recentLiverpoolData = `[
   Kaide Gordon has scored 0 goals and has 0 assists overall in his whole Liverpool career.
   Joel Matip has scored 11 goals and has 6 assists overall in his whole Liverpool career.
 
-  Virgil van Dijk has won 21/33 tackles this season. He has intercepted the ball 43 times.
+  Virgil van Dijk has won 22/34 tackles this season. He has intercepted the ball 44 times.
   Luis Diaz has won 25/30 tackles this season. He has intercepted the ball 5 times.
-  Joe Gomez has won 47/57 tackles this season. He has intercepted the ball 33 times.
-  Alexis Mac Allister has won 49/73 tackles this season. He has intercepted the ball 34 times.
+  Joe Gomez has won 48/58 tackles this season. He has intercepted the ball 33 times.
+  Alexis Mac Allister has won 52/77 tackles this season. He has intercepted the ball 34 times.
   Darwin Nunez has won 24/27 tackles this season. He has intercepted the ball 3 times.
   Mohamed Salah has won 9/13 tackles this season. He has intercepted the ball 3 times.
-  Dominik Szoboszlai has won 21/31 tackles this season. He has intercepted the ball 19 times.
+  Dominik Szoboszlai has won 21/31 tackles this season. He has intercepted the ball 20 times.
   Cody Gakpo has won 18/21 tackles this season. He has intercepted the ball 12 times.
   Harvey Elliott has won 26/29 tackles this season. He has intercepted the ball 12 times.
   Ibrahima Konate has won 28/40 tackles this season. He has intercepted the ball 36 times.
-  Wataru Endo has won 33/44 tackles this season. He has intercepted the ball 29 times.
+  Wataru Endo has won 34/46 tackles this season. He has intercepted the ball 30 times.
   Trent Alexander-Arnold has won 24/33 tackles this season. He has intercepted the ball 29 times.
-  Jarell Quansah has won 21/22 tackles this season. He has intercepted the ball 27 times.
-  Curtis Jones has won 19/27 tackles this season. He has intercepted the ball 13 times.
+  Jarell Quansah has won 23/24 tackles this season. He has intercepted the ball 27 times.
+  Curtis Jones has won 19/28 tackles this season. He has intercepted the ball 13 times.
   Ryan Gravenberch has won 21/31 tackles this season. He has intercepted the ball 23 times.
   Diogo Jota has won 17/26 tackles this season. He has intercepted the ball 10 times.
-  Andy Robertson has won 23/30 tackles this season. He has intercepted the ball 13 times.
+  Andy Robertson has won 23/31 tackles this season. He has intercepted the ball 13 times.
   Kostas Tsimikas has won 26/29 tackles this season. He has intercepted the ball 21 times.
-  Conor Bradley has won 32/38 tackles this season. He has intercepted the ball 12 times.
+  Conor Bradley has won 35/40 tackles this season. He has intercepted the ball 13 times.
   Joel Matip has won 6/12 tackles this season. He has intercepted the ball 14 times.
   Bobby Clark has won 8/8 tackles this season. He has intercepted the ball 3 times.
   Ben Doak has won 0/2 tackles this season. He has intercepted the ball 1 time.
@@ -154,9 +154,9 @@ const recentLiverpoolData = `[
   On 10 March 2024 in the Premier League at Home. Liverepool drew against Manchester City. The score was 1 - 1. The game was played on a Sunday and the referee was Michael Oliver. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 53%. John Stones scored for Manchester City in the 23rd minute with an assist from Kevin De Bruyne. Alexis Mac Allister scored a penalty in the 50th minute.
   On 14 March 2024 in the Europa League Round of 16 at Home. Liverpool won against Sparta Prague. The score was 6 - 1 (11 - 2 on aggregrate). The game was played on a Thursday and the referee was Artur Soares Dias. Our captain was Andy Robertson. We played a 4-3-3 formation and our possession was 77%. Darwin Nunez scored in the 7th minute with an assist from Dominik Szoboszlai. Bobby Clark scored in the 8th minute with an assist from Mohamed Salah. Mohamed Salah scored in the 10th minute with an assist from Bobby Clark. Cody Gakpo scored in the 14th minute with an assist from Mohamed Salah. Veljko Birmančević scored for Sparta Prague in the 42nd minute with an assist from Ángelo Preciado. Dominik Szoboszlai scored in the 48th minute with an assist from Mohamed Salah. Cody Gakpo scored again in the 55th minute with an assist from Harvey Elliott. 
   On 17 March 2024 in the FA Cup Quarter Finals Away. Liverpool lost to Manchester United after extra time. The score was 4 - 3. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 59%. Scott McTominay scored for Manchester United in the 10th minute. Alexis Mac Allister scored in the 44th minute with an assist from Darwin Nunez. Salah scored in the 45(+2) minute. Antony scored for Manchester United in the 87th minute. Harvey Elliott scored in the 105th minute of extra time with an assist from Connor Bradley. Marcus Rashford scored for Manchester United in the 112th minute of extra time. Amad Diallo scored in the 120(+1) minute of extra time with an assist from Alejandro Garnacho. This result means that Liverpool are unfortunately knocked out of the FA Cup.
-  On 31 March 2024 in the Premier League at Home. Liverpool won against Brighton. The score was 2 - 1. The game was played on a Sunday and the referee was David Coote. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 55%. Danny Welbeck scored for Brighton in the 2nd minute. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 65th minute with an assist from Alexis Mac Allister. This result took us to the top of the league.
+  On 31 March 2024 in the Premier League at Home. Liverpool won against Brighton. The score was 2 - 1. The game was played on a Sunday and the referee was David Coote. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 55%. Danny Welbeck scored for Brighton in the 2nd minute. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 65th minute with an assist from Alexis Mac Allister.
   On 4 April 2024 in the Premier League at Home, Liverpool won against Sheffield United. The score was 3 - 1. The game was played on a Thursday. The referee was Stuart Atwell. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 83%, which set a new Premier League record for possession percentage in a game. Darwin Nunez scored in the 17th minute. Conor Bradley scored an own goal in the 58th minute to make it 1 - 1. Alexis Mac Allister scored a beautiful goal in the 76th minute with an assist from Luis Diaz. Cody Gakpo scored in the 90th minute with an assist from Andy Robertson.
-  On 7 April 2024 in the Premier League Away, Liverpool play against Manchester United.
+  On 7 April 2024 in the Premier League Away, Liverpool drew against Manchester United. The score was 2 - 2. The game was played on a Sunday. The referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 62%. Luis Diaz scored in the 23rd minute with an assist from Darwin Nunez. Bruno Fernandes scored for Manchester United in the 50th minute. Kobbie Mainoo scored for Manchester United in the 67th minute with an assist from Aaron Wan-Bissaka. Mohamed Salah scored a penalty in the 84th minute, which was won by Harvey Elliott. This result means we are 2nd in the league behind Arsenal on goal difference. The goal difference is 10 goals.
   On 11 April 2024 in the Europa League at Home, Liverpool play against Atalanta.
   On 14 April 2024 in the Premier League at Home, Liverpool play against Crystal Palace.
   On 17 April 2024 in the Europa League Away, Liverpool play against Atalanta.
