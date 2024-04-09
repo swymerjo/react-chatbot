@@ -1,66 +1,11 @@
 const { OpenAI } = require("openai");
+import * as cheerio from "cheerio";
+import axios from "axios";
 
 const apiKey = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey });
 
-const recentLiverpoolData = `[
-  Mohamed Salah has scored 23 goals this season and has 13 assists. He has scored 209 goals and has 86 assists overall in his whole Liverpool career.
-  Darwin Nunez has scored 18 goals this season and has 13 assists. He has scored 33 goals and has 17 assists overall in his whole Liverpool career.
-  Diogo Jota has scored 14 goals this season and 4 assists. He has scored 55 goals and has 19 assists overall in his whole Liverpool career.
-  Luis Díaz has scored 13 goals this season and has 4 assists. He has scored 24 goals and has 10 assists overall in his whole Liverpool career.
-  Cody Gakpo has scored 14 goals this season and has 4 assists. He has scored 21 goals and has 6 assists overall in his whole Liverpool career.
-  Dominik Szoboszlai has scored 7 goals this season and has 4 assists. He has scored 7 goals and has 4 assists overall in his whole Liverpool career.
-  Trent Alexander-Arnold has scored 2 goals this season and has 10 assists. He has scored 18 goals and has 79 assists overall in his whole Liverpool career.
-  Alexis Mac Allister has scored 6 goals this season and has 7 assists. He has scored 6 goals and has 7 assists overall in his whole Liverpool career. He has been a standout player this season
-  Virgil van Dijk has scored 4 goals this season and has 2 assists. He has scored 23 goals and has 9 assists overall in his whole Liverpool career. 
-  Harvey Elliott has scored 3 goals this season and has 7 assists. He has scored 9 goals and has 10 assists overall in his whole Liverpool career.
-  Curtis Jones has scored 5 goals this season and has 3 assists. He has scored 16 goals and has 13 assists overall in his whole Liverpool career.
-  Wataru Endo has scored 2 goals this season and has 1 assist. He has scored 2 goals and has 1 assist overall in his whole Liverpool career.
-  Andy Robertson has scored 1 goal this season and has 2 assists. He has scored 9 goals and has 65 assists overall in his whole Liverpool career.
-  Conor Bradley has scored 1 goal this season and has 7 assists. He has scored 1 goal and has 7 assists overall in his whole Liverpool career.
-  Ryan Gravenberch has scored 3 goals this season and has 2 assists. He has scored 3 goals and has 2 assists overall in his whole Liverpool career.
-  Jarell Quansah has scored 1 goal this season and has 3 assists. He has scored 1 goal and has 3 assists overall in his whole Liverpool career.
-  Jayden Danns has scored 2 goals this season. He has scored 2 goals and has 0 assists overall in his whole Liverpool career.
-  Lewis Koumas has scored 1 goal this season. He has scored 1 goal and has 0 assists overall in his whole Liverpool career.
-  Bobby Clark has 1 goal this season and 2 assists. He has scored 1 goal and has 2 assists overall in his whole Liverpool career.
-  Kostas Tsimikas has 4 assists this season. He has scored 0 goals and has 16 assists overall in his whole Liverpool career.
-  Joe Gomez has 3 assists this season. He has scored 0 goals and has 9 assists overall in his whole Liverpool career.
-  James McConnell has 1 assist this season. He has scored 0 goals and has 1 assist overall in his whole Liverpool career.
-  Ibrahima Konaté has 1 assist this season. He has scored 3 goals and has 2 assists overall in his whole Liverpool career.
-  Alisson Becker has scored 1 goal and has 3 assists overall in his whole Liverpool career, and has kept 110 clean sheets.
-  Caoimhin Kelleher has scored 0 goals and has 0 assists overall in his whole Liverpool career, and has kept 15 clean sheets.
-  Stefan Bajcetic has scored 1 goal and has 0 assists overall in his whole Liverpool career.
-  Kaide Gordon has scored 0 goals and has 0 assists overall in his whole Liverpool career.
-  Joel Matip has scored 11 goals and has 6 assists overall in his whole Liverpool career.
-
-  Virgil van Dijk has won 22/34 tackles this season. He has intercepted the ball 44 times.
-  Luis Diaz has won 25/30 tackles this season. He has intercepted the ball 5 times.
-  Joe Gomez has won 48/58 tackles this season. He has intercepted the ball 33 times.
-  Alexis Mac Allister has won 52/77 tackles this season. He has intercepted the ball 34 times.
-  Darwin Nunez has won 24/27 tackles this season. He has intercepted the ball 3 times.
-  Mohamed Salah has won 9/13 tackles this season. He has intercepted the ball 3 times.
-  Dominik Szoboszlai has won 21/31 tackles this season. He has intercepted the ball 20 times.
-  Cody Gakpo has won 18/21 tackles this season. He has intercepted the ball 12 times.
-  Harvey Elliott has won 26/29 tackles this season. He has intercepted the ball 12 times.
-  Ibrahima Konate has won 28/40 tackles this season. He has intercepted the ball 36 times.
-  Wataru Endo has won 34/46 tackles this season. He has intercepted the ball 30 times.
-  Trent Alexander-Arnold has won 24/33 tackles this season. He has intercepted the ball 29 times.
-  Jarell Quansah has won 23/24 tackles this season. He has intercepted the ball 27 times.
-  Curtis Jones has won 19/28 tackles this season. He has intercepted the ball 13 times.
-  Ryan Gravenberch has won 21/31 tackles this season. He has intercepted the ball 23 times.
-  Diogo Jota has won 17/26 tackles this season. He has intercepted the ball 10 times.
-  Andy Robertson has won 23/31 tackles this season. He has intercepted the ball 13 times.
-  Kostas Tsimikas has won 26/29 tackles this season. He has intercepted the ball 21 times.
-  Conor Bradley has won 35/40 tackles this season. He has intercepted the ball 13 times.
-  Joel Matip has won 6/12 tackles this season. He has intercepted the ball 14 times.
-  Bobby Clark has won 8/8 tackles this season. He has intercepted the ball 3 times.
-  Ben Doak has won 0/2 tackles this season. He has intercepted the ball 1 time.
-  James McConnell has won 2/3 tackles this season. He has intercepted the ball 3 times.
-  Luke Chambers has won 1/2 tackles this season. He has intercepted the ball 2 times.
-  Stefan Bajcetic has won 1/1 tackles this season. He has intercepted the ball 1 time.
-  Calum Scanlon has won 1/1 tackles this season. He has intercepted the ball 1 time.
-  Owen Beck has won 1/2 tackles this season. He has intercepted the ball 0 times.
-
+const liverpooldata = `[
   The current Liverpool squad of 2023/24 has:
   Manager: Jurgen Klopp. Age: 56. Nationality: German.
   Player: Alisson Becker. Position: Goalkeeper. Age: 31. National team: Brazil. He is right-footed.
@@ -168,7 +113,89 @@ const recentLiverpoolData = `[
   On 19 May 2024 in the Premier League at Home, Liverpool play against Wolves.
 ].`;
 
+type ShootingData = {
+  name: string;
+  goals: string;
+  shots: string;
+  shotsOnTarget: string;
+};
+
+type DefensiveData = {
+  name: string;
+  tackles: string;
+  tacklesWon: string;
+  interceptions: string;
+};
+
+export async function GET() {
+  let shootingData: ShootingData[] = [];
+  let defensiveData: DefensiveData[] = [];
+
+  const response = await axios.get(
+    "https://fbref.com/en/squads/822bd0ba/2023-2024/all_comps/Liverpool-Stats-All-Competitions"
+  );
+  const html = response.data;
+  const $ = cheerio.load(html);
+  const shootingStats = $("#switcher_stats_shooting tbody");
+  const defensivestats = $("#switcher_stats_defense tbody");
+  const shooting = new Set();
+  const defense = new Set();
+
+  $("tr", shootingStats).each((index, element) => {
+    const playerName = $('th[data-stat="player"] a', element).text().trim();
+
+    if (!shooting.has(playerName)) {
+      const playerGoals = $('td[data-stat="goals"]', element).text().trim();
+      const playerShots = $('td[data-stat="shots"]', element).text().trim();
+      const playerShotsOnTarget = $('td[data-stat="shots_on_target"]', element)
+        .text()
+        .trim();
+
+      shootingData.push({
+        name: playerName,
+        goals: playerGoals,
+        shots: playerShots,
+        shotsOnTarget: playerShotsOnTarget,
+      });
+      shooting.add(playerName);
+    }
+  });
+
+  $("tr", defensivestats).each((index, element) => {
+    const playerName = $('th[data-stat="player"] a', element).text().trim();
+
+    if (!defense.has(playerName)) {
+      const playerTackles = $('td[data-stat="tackles"]', element).text().trim();
+      const playerTacklesWon = $('td[data-stat="tackles_won"]', element)
+        .text()
+        .trim();
+      const playerInterceptions = $('td[data-stat="interceptions"]', element)
+        .text()
+        .trim();
+
+      defensiveData.push({
+        name: playerName,
+        tackles: playerTackles,
+        tacklesWon: playerTacklesWon,
+        interceptions: playerInterceptions,
+      });
+      defense.add(playerName);
+    }
+  });
+  return Response.json({ shootingData, defensiveData });
+}
+
 export async function POST(req: Request) {
+  const recentData = (await axios.get("http://localhost:3000/api/openai")).data;
+
+  const shootingData = recentData.shootingData.map(
+    ({ name, goals, shots, shotsOnTarget }: ShootingData) =>
+      `This season, ${name} has had ${shots} shots, ${shotsOnTarget} were on target, and ${goals} were goals.`
+  );
+  const defensiveData = recentData.defensiveData.map(
+    ({ name, tackles, tacklesWon, interceptions }: DefensiveData) =>
+      `This season, ${name} has made ${tackles} tackles and won ${tacklesWon} tackles. They also made ${interceptions} interceptions.`
+  );
   const { question } = await req.json();
   const response = await openai.chat.completions.create({
     messages: [
@@ -179,7 +206,7 @@ export async function POST(req: Request) {
       },
       {
         role: "user",
-        content: `${recentLiverpoolData} ${question}`,
+        content: `${liverpooldata} ${shootingData} ${defensiveData} ${question}`,
       },
     ],
     temperature: 0.1,
