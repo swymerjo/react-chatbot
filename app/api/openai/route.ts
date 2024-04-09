@@ -4,55 +4,54 @@ import axios from "axios";
 
 const apiKey = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey });
-
 const liverpooldata = `[
   The current Liverpool squad of 2023/24 has:
   Manager: Jurgen Klopp. Age: 56. Nationality: German.
-  Player: Alisson Becker. Position: Goalkeeper. Age: 31. National team: Brazil. He is right-footed.
-  Player: Caoimhín Kelleher. Position: Goalkeeper. Age: 25. National team: Ireland. He is right-footed.
-  Player: Fabian Mrozek. Position: Goalkeeper. Age: 20. National team: Poland.
-  Player: Marcelo Pitaluga. Position: Goalkeeper. Age: 21. National team: Brazil.
-  Player: Vitezslav Jaros. Position: Goalkeeper. Age: 22. National team: Czech Republic.
-  Player: Adrián. Position: Goalkeeper. Age: 37. National team: Spain. He is right-footed.
-  Player: Ibrahima Konaté. Position: Centre-Back. Age: 24. National team: France. He is right-footed.
-  Player: Virgil van Dijk. Position: Centre-Back. Age: 32. National team: Netherlands. He is right-footed.
-  Player: Joe Gomez. Position: Centre-Back. Age: 26. National team: England. He is right-footed.
-  Player: Joel Matip. Position: Centre-Back. Age: 32. National team: Cameroon. He is right-footed.
-  Player: Jarell Quansah. Position: Centre-Back. Age: 21. National team: England. He is right-footed.
-  Player: Andy Robertson. Position: Left-Back. Age: 30. National team: Scotland. He is left-footed.
-  Player: Konstantinos Tsimikas. Position: Left-Back. Age: 27. National team: Greece. He is left-footed.
-  Player: Trent Alexander-Arnold. Position: Right-Back. Age: 25. National team: England. He is right-footed.
-  Player: Conor Bradley. Position: Right-Back. Age: 20. National team: Northern Ireland. He is right-footed.
-  Player: Wataru Endo. Position: Defensive Midfield. Age: 31. National team: Japan. He is right-footed.
-  Player: Luke Chambers. Position: Defensive Midfield. Age: 19. National team: England. 
-  Player: Stefan Bajcetic. Position: Defensive Midfield. Age: 19. National team: Spain. He is right-footed.
-  Player: Amara Nallo. Position: Defensive Midfield. Age: 17. National team: England.
-  Player: Owen Beck. Position: Defensive Midfield. Age: 21. National team: Wales.
-  Player: James McConnell. Position: Central Midfield. Age: 19. National team: England.
-  Player: Bobby Clark. Position: Central Midfield. Age: 19. National team: England. He is right-footed.
-  Player: Dominik Szoboszlai. Position: Central Midfield. Age: 23. National team: Hungary. He is right-footed.
-  Player: Alexis Mac Allister. Position: Central Midfield. Age: 25. National team: Argentina. He is right-footed.
-  Player: Lewis Koumas. Position: Central Midfield. Age: 18. National team: Wales.
-  Player: Calum Scanlon. Position: Central Midfield. Age: 19. National team: England. 
-  Player: Trey Nyoni. Position: Central Midfield. Age: 16. National team: England.
-  Player: Ryan Gravenberch. Position: Central Midfield. Age: 21. National team: Netherlands. He is right-footed.
-  Player: Curtis Jones. Position: Central Midfield. Age: 23. National team: England. He is right-footed.
-  Player: Thiago. Position: Central Midfield. Age: 32. National team: Spain Brazil. He is right-footed.
-  Player: Harvey Elliott. Position: Attacking Midfield. Age: 21. National team: England. He is left-footed.
-  Player: Luis Díaz. Position: Left Winger. Age: 27. National team: Colombia. He is right-footed.
-  Player: Cody Gakpo. Position: Left Winger. Age: 24. National team: Netherlands. He is right-footed.
-  Player: Diogo Jota. Position: Left Winger. Age: 27. National team: Portugal. He is right-footed.
-  Player: Mohamed Salah. Position: Right Winger. Age: 31. National team: Egypt. He is left-footed.
-  Player: Ben Doak. Position: Right Winger. Age: 18. National team: Scotland. He is right-footed.
-  Player: Kaide Gordon. Position: Centre-Forward. Age 19. National team: England.
-  Player: Jayden Danns. Position: Centre-Forward. Age: 18. National team: England.
-  Player: Thomas Hill. Position: Centre-Forward. Age: 21. National team: Wales.
-  Player: Darwin Nunez. Position: Centre-Forward. Age: 24. National team: Uruguay. He is right-footed.
+  Player: Alisson Becker. National team: Brazil. He is right-footed.
+  Player: Caoimhín Kelleher. National team: Ireland. He is right-footed.
+  Player: Fabian Mrozek. National team: Poland.
+  Player: Marcelo Pitaluga. National team: Brazil.
+  Player: Vitezslav Jaros. National team: Czech Republic.
+  Player: Adrián. National team: Spain. He is right-footed.
+  Player: Ibrahima Konaté. National team: France. He is right-footed.
+  Player: Virgil van Dijk. National team: Netherlands. He is right-footed.
+  Player: Joe Gomez. National team: England. He is right-footed.
+  Player: Joel Matip. National team: Cameroon. He is right-footed.
+  Player: Jarell Quansah. National team: England. He is right-footed.
+  Player: Andy Robertson. National team: Scotland. He is left-footed.
+  Player: Konstantinos Tsimikas. National team: Greece. He is left-footed.
+  Player: Trent Alexander-Arnold. National team: England. He is right-footed.
+  Player: Conor Bradley. National team: Northern Ireland. He is right-footed.
+  Player: Wataru Endo. National team: Japan. He is right-footed.
+  Player: Luke Chambers. National team: England. 
+  Player: Stefan Bajcetic. National team: Spain. He is right-footed.
+  Player: Amara Nallo. National team: England.
+  Player: Owen Beck. National team: Wales.
+  Player: James McConnell. National team: England.
+  Player: Bobby Clark. National team: England. He is right-footed.
+  Player: Dominik Szoboszlai. National team: Hungary. He is right-footed.
+  Player: Alexis Mac Allister. National team: Argentina. He is right-footed.
+  Player: Lewis Koumas. National team: Wales.
+  Player: Calum Scanlon. National team: England. 
+  Player: Trey Nyoni. National team: England.
+  Player: Ryan Gravenberch. National team: Netherlands. He is right-footed.
+  Player: Curtis Jones. National team: England. He is right-footed.
+  Player: Thiago Alcantara. National team: Spain. He is right-footed.
+  Player: Harvey Elliott. National team: England. He is left-footed.
+  Player: Luis Díaz. National team: Colombia. He is right-footed.
+  Player: Cody Gakpo. National team: Netherlands. He is right-footed.
+  Player: Diogo Jota. National team: Portugal. He is right-footed.
+  Player: Mohamed Salah. National team: Egypt. He is left-footed.
+  Player: Ben Doak. National team: Scotland. He is right-footed.
+  Player: Kaide Gordon. National team: England.
+  Player: Jayden Danns. National team: England.
+  Player: Thomas Hill. National team: Wales.
+  Player: Darwin Nunez. National team: Uruguay. He is right-footed.
 
   Liverpool are unfortunately not in the Champions League this season, we are in the Europa League.
   Jurgen Klopp is our manager but he will leave at the end of the season, which is heart-breaking. The fan favourite to replace him was Xabi Alonso who is currently the manager of Bayer 04 Leverkusen and is having an amazing season with them but he recently said he will stay with Bayer 04 Leverkusen. The new favourite to replace Jurgen Klopp is Ruben Amorim from Sporting Lisbon.
 
-  Our results for the 2023/24 season so far are as follows:
+  These results for the 2023/24 season so far are:
   On 13 August 2023 in the Premier League at Home. Liverpool drew against Chelsea. The score was 1 - 1. The game was played on a Sunday and the referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 35%. Luis Diaz scored in the 18th minute with an assist from Mohamed Salah. Axel Disasi scored for Chelsea in the 37th minute with an assist from Ben Chilwell.
   On 19 August 2023 in the Premier League at Home. Liverpool won against Bournemouth. The score was 3 - 1. The game was played on a Saturday and the referee was Thomas Bramall. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 64%. Antoine Semenyo scored for Bournemouth in the 3rd minute with an assist from Dominic Solanke. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 36th minute. Mohamed Salah missed a penalty in the 36th minute. Alexis Mac Allister was sent off for Liverpool in the 58th minute. Diogo Jota scored in the 62nd minute.
   On 27 August 2023 in the Premier League Away. Liverpool won against Newcastle Utd. The score was 2 - 1. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 41%. Anthony Gordon scored for Newcastle in the 25th minute. Virgil van Dijk was sent off for Liverpool in the 28th minute. Darwin Nunez scored in the 81st minute. Darwin Nunez scored again in the 93rd minute with an assist from Alexis Mac Allister.
@@ -101,8 +100,8 @@ const liverpooldata = `[
   On 17 March 2024 in the FA Cup Quarter Finals Away. Liverpool lost to Manchester United after extra time. The score was 4 - 3. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 59%. Scott McTominay scored for Manchester United in the 10th minute. Alexis Mac Allister scored in the 44th minute with an assist from Darwin Nunez. Salah scored in the 45(+2) minute. Antony scored for Manchester United in the 87th minute. Harvey Elliott scored in the 105th minute of extra time with an assist from Connor Bradley. Marcus Rashford scored for Manchester United in the 112th minute of extra time. Amad Diallo scored in the 120(+1) minute of extra time with an assist from Alejandro Garnacho. This result means that Liverpool are unfortunately knocked out of the FA Cup.
   On 31 March 2024 in the Premier League at Home. Liverpool won against Brighton. The score was 2 - 1. The game was played on a Sunday and the referee was David Coote. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 55%. Danny Welbeck scored for Brighton in the 2nd minute. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 65th minute with an assist from Alexis Mac Allister.
   On 4 April 2024 in the Premier League at Home, Liverpool won against Sheffield United. The score was 3 - 1. The game was played on a Thursday. The referee was Stuart Atwell. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 83%, which set a new Premier League record for possession percentage in a game. Darwin Nunez scored in the 17th minute. Conor Bradley scored an own goal in the 58th minute to make it 1 - 1. Alexis Mac Allister scored a beautiful goal in the 76th minute with an assist from Luis Diaz. Cody Gakpo scored in the 90th minute with an assist from Andy Robertson.
-  On 7 April 2024 in the Premier League Away, Liverpool drew against Manchester United. The score was 2 - 2. The game was played on a Sunday. The referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 62%. Luis Diaz scored in the 23rd minute with an assist from Darwin Nunez. Bruno Fernandes scored for Manchester United in the 50th minute. Kobbie Mainoo scored for Manchester United in the 67th minute with an assist from Aaron Wan-Bissaka. Mohamed Salah scored a penalty in the 84th minute, which was won by Harvey Elliott. This result means we are 2nd in the league behind Arsenal on goal difference. The goal difference is 10 goals.
-  On 11 April 2024 in the Europa League at Home, Liverpool play against Atalanta.
+  On 7 April 2024 in the Premier League Away, Liverpool drew against Manchester United. The score was 2 - 2. The game was played on a Sunday. The referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 62%. Luis Diaz scored in the 23rd minute with an assist from Darwin Nunez. Bruno Fernandes scored for Manchester United in the 50th minute. Kobbie Mainoo scored for Manchester United in the 67th minute with an assist from Aaron Wan-Bissaka. Mohamed Salah scored a penalty in the 84th minute, which was won by Harvey Elliott. This was our most recent game. This result means we are 2nd in the league behind Arsenal on goal difference. The goal difference is 10 goals.
+  On 11 April 2024 in the Europa League at Home, Liverpool play against Atalanta. This is our next game.
   On 14 April 2024 in the Premier League at Home, Liverpool play against Crystal Palace.
   On 17 April 2024 in the Europa League Away, Liverpool play against Atalanta.
   On 21 April 2024 in the Premier League Away, Liverpool play against Fulham.
@@ -127,19 +126,70 @@ type DefensiveData = {
   interceptions: string;
 };
 
+type GoalkeepingData = {
+  name: string;
+  cleanSheets: string;
+  savePercentage: string;
+  saves: string;
+  goalsConceded: string;
+};
+
+type StandardData = {
+  name: string;
+  assists: string;
+  starts: string;
+  minutesPlayed: string;
+  expectedGoals: string;
+  age: string;
+  position: string;
+  games: string;
+};
+
 export async function GET() {
   let shootingData: ShootingData[] = [];
   let defensiveData: DefensiveData[] = [];
+  let goalkeepingData: GoalkeepingData[] = [];
+  let standardData: StandardData[] = [];
 
   const response = await axios.get(
     "https://fbref.com/en/squads/822bd0ba/2023-2024/all_comps/Liverpool-Stats-All-Competitions"
   );
   const html = response.data;
   const $ = cheerio.load(html);
+  const standardStats = $("#switcher_stats_standard tbody");
   const shootingStats = $("#switcher_stats_shooting tbody");
-  const defensivestats = $("#switcher_stats_defense tbody");
+  const defensiveStats = $("#switcher_stats_defense tbody");
+  const goalkeepingStats = $("#switcher_stats_keeper tbody");
+  const standard = new Set();
   const shooting = new Set();
   const defense = new Set();
+  const goalkeeping = new Set();
+
+  $("tr", standardStats).each((index, element) => {
+    const playerName = $('th[data-stat="player"] a', element).text().trim();
+
+    if (!standard.has(playerName)) {
+      const assists = $('td[data-stat="assists"]', element).text().trim();
+      const starts = $('td[data-stat="games_starts"]', element).text().trim();
+      const minutesPlayed = $('td[data-stat="minutes"]', element).text().trim();
+      const expectedGoals = $('td[data-stat="xg"]', element).text().trim();
+      const age = $('td[data-stat="age"]', element).text().trim().slice(0, 2);
+      const position = $('td[data-stat="position"]', element).text().trim();
+      const games = $('td[data-stat="games"]', element).text().trim();
+
+      standardData.push({
+        name: playerName,
+        assists: assists,
+        starts: starts,
+        minutesPlayed: minutesPlayed,
+        expectedGoals: expectedGoals,
+        age: age,
+        position: position,
+        games: games,
+      });
+      standard.add(playerName);
+    }
+  });
 
   $("tr", shootingStats).each((index, element) => {
     const playerName = $('th[data-stat="player"] a', element).text().trim();
@@ -161,7 +211,7 @@ export async function GET() {
     }
   });
 
-  $("tr", defensivestats).each((index, element) => {
+  $("tr", defensiveStats).each((index, element) => {
     const playerName = $('th[data-stat="player"] a', element).text().trim();
 
     if (!defense.has(playerName)) {
@@ -182,12 +232,56 @@ export async function GET() {
       defense.add(playerName);
     }
   });
-  return Response.json({ shootingData, defensiveData });
+
+  $("tr", goalkeepingStats).each((index, element) => {
+    const playerName = $('th[data-stat="player"] a', element).text().trim();
+
+    if (!goalkeeping.has(playerName)) {
+      const cleanSheets = $('td[data-stat="gk_clean_sheets"]', element)
+        .text()
+        .trim();
+      const savePercentage = $('td[data-stat="gk_save_pct"]', element)
+        .text()
+        .trim();
+      const saves = $('td[data-stat="gk_saves"]', element).text().trim();
+      const goalsConceded = $('td[data-stat="gk_goals_against"]', element)
+        .text()
+        .trim();
+
+      goalkeepingData.push({
+        name: playerName,
+        cleanSheets: cleanSheets,
+        savePercentage: savePercentage,
+        saves: saves,
+        goalsConceded: goalsConceded,
+      });
+      goalkeeping.add(playerName);
+    }
+  });
+  return Response.json({
+    shootingData,
+    defensiveData,
+    goalkeepingData,
+    standardData,
+  });
 }
 
 export async function POST(req: Request) {
-  const recentData = (await axios.get("http://localhost:3000/api/openai")).data;
-
+  const recentData = (await axios.get("https://chat-lfc.vercel.app/api/openai"))
+    .data;
+  const standardData = recentData.standardData.map(
+    ({
+      name,
+      assists,
+      starts,
+      minutesPlayed,
+      expectedGoals,
+      position,
+      age,
+      games,
+    }: StandardData) =>
+      `${name} is ${age} years old. He playes the ${position} position. He has played ${minutesPlayed} minutes this season and has started ${starts} games. He has played ${games} games in total. He has ${assists} assists and ${expectedGoals} expected goals.`
+  );
   const shootingData = recentData.shootingData.map(
     ({ name, goals, shots, shotsOnTarget }: ShootingData) =>
       `This season, ${name} has had ${shots} shots, ${shotsOnTarget} were on target, and ${goals} were goals.`
@@ -196,20 +290,30 @@ export async function POST(req: Request) {
     ({ name, tackles, tacklesWon, interceptions }: DefensiveData) =>
       `This season, ${name} has made ${tackles} tackles and won ${tacklesWon} tackles. They also made ${interceptions} interceptions.`
   );
+  const goalkeepingData = recentData.goalkeepingData.map(
+    ({
+      name,
+      cleanSheets,
+      savePercentage,
+      saves,
+      goalsConceded,
+    }: GoalkeepingData) =>
+      `This season, ${name} has ${cleanSheets} clean sheets. He has also made ${saves} saves and has a ${savePercentage} save percentage. ${name} has conceded ${goalsConceded} goals.`
+  );
   const { question } = await req.json();
   const response = await openai.chat.completions.create({
     messages: [
       {
         role: "system",
         content:
-          "You love Liverpool FC. Your name is Darwizzy and you have a cheeky but endearing personality. You have latin and scouse humour. When you are asked a question about Liverpool's results, fixtures, players and statistics use the information provided to answer questions and also show your personality in the responses you provide. Do not give subjective opinions if you are unsure of the answer. If you can not find the answer politely acknowledge the limitation and suggest asking another question related to Liverpool FC. Keep your answers to fewer than 200 words.",
+          "You love Liverpool FC. Your name is Darwizzy and you have a cheeky but endearing personality. You have latin and scouse humour. When you are asked a question about Liverpool's results, fixtures, players and statistics use the information provided to answer questions and also show your personality in the responses you provide. GK means Goalkeeper, DF means defence, FW means forward, MF means midfield. Do not give subjective opinions if you are unsure of the answer. If you can not find the answer politely acknowledge the limitation and suggest asking another question related to Liverpool FC. Keep your answers to fewer than 200 words. Provide the stats you have about a certain player, when asked. For example, for a goalkeeper, provide goalkeeper data. For the outfield players, provide general, attacking, and defensive stats.",
       },
       {
         role: "user",
-        content: `${liverpooldata} ${shootingData} ${defensiveData} ${question}`,
+        content: `${liverpooldata} ${standardData} ${shootingData} ${defensiveData} ${goalkeepingData} ${question}`,
       },
     ],
-    temperature: 0.1,
+    temperature: 0.3,
     model: "gpt-3.5-turbo",
     max_tokens: 300,
   });
