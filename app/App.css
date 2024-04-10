@@ -84,3 +84,12 @@ button:hover {
   font-weight: bold;
   margin-top: 0.5em;
 }
+
+.link {
+  color: #d60000;
+  font-size: 1.3em;
+}
+
+.link:visited {
+  color: #d60000;
+}
