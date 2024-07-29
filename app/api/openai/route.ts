@@ -5,8 +5,8 @@ import axios from "axios";
 const apiKey = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey });
 const liverpooldata = `[
-  The current Liverpool squad of 2023/24 has:
-  Manager: Jurgen Klopp. Age: 56. Nationality: German.
+  The current Liverpool squad of 2024/25 has:
+  Manager: Arne Slot. Age: 45. Nationality: Dutch.
   Player: Alisson Becker. National team: Brazil. He is right-footed.
   Player: Caoimhín Kelleher. National team: Ireland. He is right-footed.
   Player: Fabian Mrozek. National team: Poland.
@@ -16,7 +16,6 @@ const liverpooldata = `[
   Player: Ibrahima Konaté. National team: France. He is right-footed.
   Player: Virgil van Dijk. National team: Netherlands. He is right-footed.
   Player: Joe Gomez. National team: England. He is right-footed.
-  Player: Joel Matip. National team: Cameroon. He is right-footed.
   Player: Jarell Quansah. National team: England. He is right-footed.
   Player: Andy Robertson. National team: Scotland. He is left-footed.
   Player: Konstantinos Tsimikas. National team: Greece. He is left-footed.
@@ -36,7 +35,6 @@ const liverpooldata = `[
   Player: Trey Nyoni. National team: England.
   Player: Ryan Gravenberch. National team: Netherlands. He is right-footed.
   Player: Curtis Jones. National team: England. He is right-footed.
-  Player: Thiago Alcantara. National team: Spain. He is right-footed.
   Player: Harvey Elliott. National team: England. He is left-footed.
   Player: Luis Díaz. National team: Colombia. He is right-footed.
   Player: Cody Gakpo. National team: Netherlands. He is right-footed.
@@ -48,10 +46,10 @@ const liverpooldata = `[
   Player: Thomas Hill. National team: Wales.
   Player: Darwin Nunez. National team: Uruguay. He is right-footed.
 
-  Liverpool are unfortunately not in the Champions League this season, we are in the Europa League.
-  Jurgen Klopp is our manager but he will leave at the end of the season, which is heart-breaking. The fan favourite to replace him was Xabi Alonso who is currently the manager of Bayer 04 Leverkusen and is having an amazing season with them but he recently said he will stay with Bayer 04 Leverkusen. The new favourite to replace Jurgen Klopp is Ruben Amorim from Sporting Lisbon.
+  Liverpool are in the Champions League for the 2024/25 season.
+  Arne Slot is our manager. He is Dutch.
 
-  These results for the 2023/24 season so far are:
+  These results for the 2023/24 season (last season) are:
   On 13 August 2023 in the Premier League at Home. Liverpool drew against Chelsea. The score was 1 - 1. The game was played on a Sunday and the referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 35%. Luis Diaz scored in the 18th minute with an assist from Mohamed Salah. Axel Disasi scored for Chelsea in the 37th minute with an assist from Ben Chilwell.
   On 19 August 2023 in the Premier League at Home. Liverpool won against Bournemouth. The score was 3 - 1. The game was played on a Saturday and the referee was Thomas Bramall. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 64%. Antoine Semenyo scored for Bournemouth in the 3rd minute with an assist from Dominic Solanke. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 36th minute. Mohamed Salah missed a penalty in the 36th minute. Alexis Mac Allister was sent off for Liverpool in the 58th minute. Diogo Jota scored in the 62nd minute.
   On 27 August 2023 in the Premier League Away. Liverpool won against Newcastle Utd. The score was 2 - 1. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 41%. Anthony Gordon scored for Newcastle in the 25th minute. Virgil van Dijk was sent off for Liverpool in the 28th minute. Darwin Nunez scored in the 81st minute. Darwin Nunez scored again in the 93rd minute with an assist from Alexis Mac Allister.
@@ -100,17 +98,18 @@ const liverpooldata = `[
   On 17 March 2024 in the FA Cup Quarter Finals Away. Liverpool lost to Manchester United after extra time. The score was 4 - 3. The game was played on a Sunday and the referee was John Brooks. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 59%. Scott McTominay scored for Manchester United in the 10th minute. Alexis Mac Allister scored in the 44th minute with an assist from Darwin Nunez. Salah scored in the 45(+2) minute. Antony scored for Manchester United in the 87th minute. Harvey Elliott scored in the 105th minute of extra time with an assist from Connor Bradley. Marcus Rashford scored for Manchester United in the 112th minute of extra time. Amad Diallo scored in the 120(+1) minute of extra time with an assist from Alejandro Garnacho. This result means that Liverpool are unfortunately knocked out of the FA Cup.
   On 31 March 2024 in the Premier League at Home. Liverpool won against Brighton. The score was 2 - 1. The game was played on a Sunday and the referee was David Coote. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 55%. Danny Welbeck scored for Brighton in the 2nd minute. Luis Diaz scored in the 27th minute. Mohamed Salah scored in the 65th minute with an assist from Alexis Mac Allister.
   On 4 April 2024 in the Premier League at Home, Liverpool won against Sheffield United. The score was 3 - 1. The game was played on a Thursday. The referee was Stuart Atwell. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 83%, which set a new Premier League record for possession percentage in a game. Darwin Nunez scored in the 17th minute. Conor Bradley scored an own goal in the 58th minute to make it 1 - 1. Alexis Mac Allister scored a beautiful goal in the 76th minute with an assist from Luis Diaz. Cody Gakpo scored in the 90th minute with an assist from Andy Robertson.
-  On 7 April 2024 in the Premier League Away, Liverpool drew against Manchester United. The score was 2 - 2. The game was played on a Sunday. The referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 62%. Luis Diaz scored in the 23rd minute with an assist from Darwin Nunez. Bruno Fernandes scored for Manchester United in the 50th minute. Kobbie Mainoo scored for Manchester United in the 67th minute with an assist from Aaron Wan-Bissaka. Mohamed Salah scored a penalty in the 84th minute, which was won by Harvey Elliott. This was our most recent game. This result means we are 2nd in the league behind Arsenal on goal difference. The goal difference is 10 goals.
-  On 11 April 2024 in the Europa League at Home, Liverpool play against Atalanta. This is our next game.
-  On 14 April 2024 in the Premier League at Home, Liverpool play against Crystal Palace.
-  On 17 April 2024 in the Europa League Away, Liverpool play against Atalanta.
-  On 21 April 2024 in the Premier League Away, Liverpool play against Fulham.
-  On 24 April 2024 in the Premier League Away, Liverpool play against Everton.
-  On 27 April 2024 in the Premier League Away, Liverpool play against West Ham.
-  On 4 May 2024 in the Premier League at Home, Liverpool play against Tottenham.
-  On 11 May 2024 in the Premier League Away, Liverpool play against Aston Villa.
-  On 19 May 2024 in the Premier League at Home, Liverpool play against Wolves.
-].`;
+  On 7 April 2024 in the Premier League Away, Liverpool drew against Manchester United. The score was 2 - 2. The game was played on a Sunday. The referee was Anthony Taylor. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 62%. Luis Diaz scored in the 23rd minute with an assist from Darwin Nunez. Bruno Fernandes scored for Manchester United in the 50th minute. Kobbie Mainoo scored for Manchester United in the 67th minute with an assist from Aaron Wan-Bissaka. Mohamed Salah scored a penalty in the 84th minute, which was won by Harvey Elliott. 
+  On 11 April 2024 in the Europa League Quarter Finals first leg at Home, Liverpool lost against Atalanta. The score was 0-3. The game was played on a Thursday. The referee was Halil Umut Meler. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 69%. Gianluca Scamacca scored in the 38th minute and then again in the 60th minute. Mario Pašalić scored in the 83rd minute. 
+  On 14 April 2024 in the Premier League at Home, Liverpool lost against Crystal Palace. The score was 0-1. The game was played on a Sunday. The referee was Chris Kavanagh. Our captain was Virgil van Dijk. We played a 4-3-3 formation and our possession was 69%. Eberechi Eze scored for Crystal Palace in the 14th minute. 
+  On 17 April 2024 in the Europa League Away, Liverpool won against Atalanta. The score was 1-0 (3-1 to Atalanta on aggregrate). The game was played on a Thursday. The referee was François Letexier. Our captain was Virgil van Dijk and our possession was 69%. Mohamed Salah scored a penalty in the 7th minute. Liverpool were knocked out of the Europa League with this defeat.
+  On 21 April 2024 in the Premier League Away, Liverpool won against Fulham. The score was 3-1. The gam was played on a Sunday. The referee was Craig Pawson. Our captain was Virgil van Dijk and our possession was 60%. Trent Alexander-Arnold scored in the 32nd minute. Timothy Castagne equalised for Fulham in the 45(+2) minute. Ryan Gravenberch scored in the 53rd minute with an assist from Harvey Elliott. Diogo Jota scored in the 72nd minute with an assist from Cody Cakpo.
+  On 24 April 2024 in the Premier League Away, Liverpool lost against Everton. The score was 2-0. The game was played on a Wednesday. The referee was Andy Madley. Our captain was Virgil van Dijk and our possession was 75%. Jarrad Branthwaite scored in the 27th minute and Dominic Calvert-Lewin scored in the 58th minute.
+  On 27 April 2024 in the Premier League Away, Liverpool drew against West Ham. The score was 2-2. The game was played on a Saturday. The referee was Anthony Taylor. Our captain was Virgil van Dijk and our possession was 71%. Jarrod Bowen scored in the 43rd minute. Andrew Robertson scored in the 48th minute with an assist from Luis Diaz. Alphonse Areola scored an own goal in the 65th minute to make it 2-1 to Liverpool. Michail Antonio scored in the 77th minute.
+  On 4 May 2024 in the Premier League at Home, Liverpool won against Tottenham. The score was 4-2. The game was played on a Sunday. The referee was Paul Tierney. Our captain was Virgil van Dijk and our possession was 44%. Mohamed Salah scored in the 16th minute with an assist from Cody Gakpo. Andrew Robertson scored in the 45th minute. Cody Gakpo scored in the 50th minute with an assist from Harvey Elliott. Harvey Elliott scored in the 59th minute with an assist from Mohamed Salah. Richarlison scored for Tottenham in the 72nd minute and Son Heung-min scored in the 77th minute.
+  On 11 May 2024 in the Premier League Away, Liverpool drew against Aston Villa. The score was 3-3. The game was played on a Monday. The referee was Simon Hooper. Our captain was Virgil van Dijk and our possession was 59%. Emiliano Martínez scored an own goal in the 2nd minute to make it 1-0 to Liverpool. Youri Tielemans scored in the 12th minute. Cody Gakpo scored in the 23rd minute. Jarell Quansah scored in the 48th minute with an assist from Harvey Elliott. Jhon Durán then scored in the 85th minute and again in the 88th minute.  
+  On 19 May 2024 in the Premier League at Home, Liverpool won against Wolves. The score was 2-0. The game was played on a Sunday. The referee was Chris Kavanagh. Our captain was Virgil van Dijk and our possession was 67%. Alexis Mac Allister scored in the 34th minute with an assist from Harvey Elliott. Jarell Quansah scored in the 40th minute.
+  Liverpool finished 3rd in the Premier League with 82 points.
+  ].`;
 
 type ShootingData = {
   name: string;
