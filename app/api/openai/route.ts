@@ -1,6 +1,12 @@
 const { OpenAI } = require("openai");
 import * as cheerio from "cheerio";
 import axios from "axios";
+import {
+  DefensiveData,
+  GoalkeepingData,
+  ShootingData,
+  StandardData,
+} from "../../../types";
 
 const apiKey = process.env.OPEN_AI_KEY;
 const openai = new OpenAI({ apiKey: apiKey });
@@ -110,39 +116,6 @@ const liverpooldata = `[
   On 19 May 2024 in the Premier League at Home, Liverpool won against Wolves. The score was 2-0. The game was played on a Sunday. The referee was Chris Kavanagh. Our captain was Virgil van Dijk and our possession was 67%. Alexis Mac Allister scored in the 34th minute with an assist from Harvey Elliott. Jarell Quansah scored in the 40th minute.
   Liverpool finished 3rd in the Premier League with 82 points.
   ].`;
-
-type ShootingData = {
-  name: string;
-  goals: string;
-  shots: string;
-  shotsOnTarget: string;
-};
-
-type DefensiveData = {
-  name: string;
-  tackles: string;
-  tacklesWon: string;
-  interceptions: string;
-};
-
-type GoalkeepingData = {
-  name: string;
-  cleanSheets: string;
-  savePercentage: string;
-  saves: string;
-  goalsConceded: string;
-};
-
-type StandardData = {
-  name: string;
-  assists: string;
-  starts: string;
-  minutesPlayed: string;
-  expectedGoals: string;
-  age: string;
-  position: string;
-  games: string;
-};
 
 export async function GET() {
   let shootingData: ShootingData[] = [];
